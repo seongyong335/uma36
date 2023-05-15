@@ -1,4 +1,6 @@
 package uma.sahmyook;
+import uma.sahmyook.horse.*;
+
 
 import uma.sahmyook.function.UmaRace;
 
