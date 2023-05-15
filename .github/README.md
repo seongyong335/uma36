@@ -23,7 +23,10 @@
     <a href="https://github.com/OneReal3203"><img src="https://img.shields.io/badge/양한진-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
   </div>
 </div>
-
+<br>
+  <div align="center">
+    <<a href="https://www.notion.so/UMA36-Milestone-4dfb98abd5c64d63b732d0c0720f4e09?pvs=4"><img src="https://img.shields.io/badge/마일스톤-FAD0C9?style=for-the-badge&logo=notion&logoColor=000000" /></a>
+  </div>  
 <h2>📑요구사항 정의</h2>
 <ol>
   <li>경마에 참여하는 말의 마리수는 9마리로 정한다.</li>
