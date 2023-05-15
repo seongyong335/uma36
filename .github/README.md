@@ -1,10 +1,5 @@
 
-<h1>Java Baseball Precourse</h1>
-<p>This repository contains the source code for the Java Baseball Precourse project.</p>
-<p>It is a game program that simulates a baseball game.</p>
-<!-- ... -->
-
-<!-- Team PandaN Front README -->
+<!-- 우마 게임  -->
 
 <h1>Team PandaN Front</h1>
 <p>This repository contains the front-end code for the Team PandaN project.</p>
@@ -17,8 +12,17 @@
 
 <h2>요구사항 정의</h2>
 <ol>
-  <li>경마에 참여하는 말의 마리수는 9마리로 정한다.</li>
-  <li>게임프로그램이 완전 종료 되기전까지는 최고점수를 저장하고, 출력한다.</li>
+  <li>1. 경마에 참여하는 말의 마리수는 9마리로 정한다.</li>
+  <li>2. 게임프로그램이 완전 종료 되기전까지는 최고점수를 저장하고, 출력한다.</li>
+  <li>3. 각각의 9마리의 말은 출발선에서 도착선까지 움직이는 모습이 보여야 한다. </li>
+  <li>4. 말이 달리는 그 모션을 정확히 어떤 방식으로 출력할지를 정하고 구현해야한다. </li>
+  <li>5. 시작할때 score 10000점을 가지고 시작한다. </li>
+  <li>6. 마권은 score를 1000점을 소모하여 구매할 수 있다. </li>
+  <li>7. 마권은 한 회차당 10개까지 사용할 수 있다. </li>
+  <li>8. 모든 마권에는 회차가 존재한다. </li>
+  <li>9. 모든 말의 승률을 확인할 수 있어야 한다. </li>
+  <li>10. 마권을 걸지 않더라도 경기는 볼 수 있다. </li>
+  <li>11. 말의 공통속성을 가진 클래스가 있어야 하며, 또 개별적인 특성을 가진다. </li>
   <!-- ... -->
 </ol>
 
