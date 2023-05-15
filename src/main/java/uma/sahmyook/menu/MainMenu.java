@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class MainMenu {
     static Scanner sc = new Scanner(System.in); // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
-    static int no;                              // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
-    static int horseNum;
-    static int ticket;
+    public static int no;                              // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
+    public static int horseNum;
+    public static int ticket;
+    public static int score = 10000;
     static MenuExit menuExit = new MenuExit(); // 메뉴 나가기 클래스 생성
     private SubMenu subMenu = new SubMenu(); // 서브 메뉴 클래스 생성
     // 메인 메뉴 메소드
