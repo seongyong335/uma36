@@ -1,11 +1,4 @@
 
-<!-- 우마 게임  -->
-
-<h1>우마 게임</h1>
-<p>This repository contains the front-end code for the Team PandaN project.</p>
-<p>It is responsible for rendering the user interface of the application.</p>
-<!-- ... -->
-
 <!-- Shared HTML Code -->
 
 <h1>경마게임</h1>
