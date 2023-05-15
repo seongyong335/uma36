@@ -2,16 +2,27 @@ package uma.sahmyook.horse;
 
 public class Horse1 extends MainHorse implements HorseInterface1{
 
-    /* 체크해보려고 만들어본 말객체입니다. 상속받을 말 클래스 완성 후 조정 할 수 있음. 아니면 머지할 떄 머지 안해도됩니다.  */
+    /* super클래스에서는 스테미너가 50미만이면 속도가 반으로 감소하지만 Horse1은 스테미너로 인한
+    * 속도 감소 없음 */
+
+
+    public Horse1(){}
+
+    public Horse1(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
+
+        setUmaName(nam);
+        setRaceProgress(nam);
+    }
+
     @Override
     public int resetStamina() {
-        return stamina = 100;
+        return setStamina(100);
     }
 
     @Override
     public void useStamina(){           //원래는 스테미너 50이하일때는
-        stamina = stamina - 10;
-        if(stamina<=50) resetStamina();
+        setStamina(getStamina()-10);
+        if(getStamina()<=50) resetStamina();
     }
 
     @Override
@@ -19,7 +30,7 @@ public class Horse1 extends MainHorse implements HorseInterface1{
         randomSpeed();
         useStamina();                                   // 달린후 스태미너를 사용합니다.
 
-        if(stamina<=50){                                 //스테미너가 50이하로 떨어지면 스피드가 반으로 줄어든다.
+        if(getStamina()<=50){                                 //스테미너가 50이하로 떨어지면 스피드가 반으로 줄어든다.
             setSpeed(getSpeed()/2);
         }
 
