@@ -1,9 +1,14 @@
 package uma.sahmyook.menu;
 
+import uma.sahmyook.function.UmaRace;
+
 public class SubMenu{
 
     public void subMenu(){
         HorseSelect horseSelect = new HorseSelect();
+        /* 경기 생성 및 시작 */
+        UmaRace ur = new UmaRace();
+
         do{
             System.out.println("================= 경기장에 입장하셨습니다! 원하시는 것을 선택해주세요. =================");
             System.out.println("1. 경기 시작!");
@@ -14,7 +19,7 @@ public class SubMenu{
             System.out.print("메뉴 선택 : ");
             MainMenu.no = MainMenu.sc.nextInt();
             switch(MainMenu.no){
-                case 1: break; // 경기 시작 메소드;
+                case 1: ur.startGame(); break; // 경기 시작 메소드;
                 case 2: horseSelect.method(); break; // 응원하는 말 선택하는 메소드;
                 case 3: break; // 경마 승률 및 배당률 확인 하는 메소드;
                 case 4: break; // 마권 구입하는 메소드;
