@@ -3,7 +3,7 @@
 <div align="center">
   <a href="https://github.com/UMA-SAHMYOOK"><img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=UMA36&fontAlign=80&fontAlignY=40&color=gradient"/> 
 </div>
-<h1 align="center">UMA MEMBER</h1>
+<h1 align="center">👪UMA MEMBER</h1>
 <div align="left">
   <div>
     <a href="https://github.com/seongyong335"><img src="https://img.shields.io/badge/최성용-FAD0C9?style=for-the-badge&logo=github&logoColor=6E6E6D" /></a>
