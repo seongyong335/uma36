@@ -1,4 +1,5 @@
 package uma.sahmyook.menu;
+import uma.sahmyook.score.*;
 
 import uma.sahmyook.function.UmaRace;
 
@@ -24,7 +25,9 @@ public class SubMenu{
                 case 1: ur.startGame(); break; // 경기 시작 메소드;
                 case 2: horseSelect.method(); break; // 응원하는 말 선택하는 메소드;
                 case 3: break; // 경마 승률 및 배당률 확인 하는 메소드;
-                case 4: break; // 마권 구입하는 메소드;
+                case 4:
+                    Ticket ticket = new Ticket();
+                    ticket.buyTicket(); break; // 마권 구입하는 메소드;
                 case 5: MainMenu.menuExit.Method(0); break;
                 default:  System.out.println("잘못 입력하셨습니다 다시 입력해주세요!");
             }
