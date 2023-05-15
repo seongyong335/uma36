@@ -13,16 +13,17 @@ public class Horse1 extends MainHorse implements HorseInterface1{
         if(stamina<=50) resetStamina();
     }
 
-    public int run(){                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
+    @Override
+    public int calMove(){                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
         randomSpeed();
         useStamina();                                   // 달린후 스태미너를 사용합니다.
 
         if(stamina<=50){                                 //스테미너가 50이하로 떨어지면 스피드가 반으로 줄어든다.
-            speed = speed/2;
+            setSpeed(getSpeed()/2);
         }
 
         //스피드 오버라이드해서 리턴받을 speed 조작할 수 있음
-        return speed;
+        return getSpeed();
     }
 
 
