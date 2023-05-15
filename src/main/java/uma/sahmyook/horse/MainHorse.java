@@ -3,12 +3,11 @@ package uma.sahmyook.horse;
 public class MainHorse {
 
     private int speed;                               // 리턴받을 랜덤한 속도값, 리턴받아서 쓸꺼라 protected 접근자 사용
-
-
     private int countRace;                    // 경기수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
     private int countVictory;                 // 우승횟수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
     private int countTop3;                    // 탑3에 들어간 횟수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
     public int stamina = 100;                       // 말의 스테미너를 저장하는 변수
+    private String umaName;
 
     public int calMove(){                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
         randomSpeed();
@@ -65,5 +64,60 @@ public class MainHorse {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    /* ----------------------------------경기 필요 필드, 메소드------------------------------------ */
+    /* 필수로 추가되어야 할 필드 */
+    private StringBuilder raceProgress = new StringBuilder();       //경기 진행 상태
+    private int distance;                                           //남은 거리
+    private int rank;                                               //등수
+    private boolean finish = true;                                  //경기 상태
+
+    /* 필수로 추가되어야 할 메소드 */
+    public void setRaceProgress() {                     //움직인만큼 이동 메소드
+        this.raceProgress.insert(0, ' ');
+    }
+
+    public MainHorse(){}
+
+    public MainHorse(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
+        this.umaName = nam;
+        this.raceProgress.append(getUmaName());
+    }
+
+    public StringBuilder getRaceProgress() {         //get 경기 진행상태
+        return this.raceProgress;
+    }
+
+    public int getDistance() {                      //get 남은거리
+        return distance;
+    }
+
+    public void setDistance(int distance) {        //set 남은거리
+        this.distance = distance;
+    }
+
+    public boolean isFinish() {                   //get 경기 상태
+        return finish;
+    }
+
+    public void setFinish(boolean finish) {      //set 경기 상태
+        this.finish = finish;
+    }
+
+    public int getRank() {                      //get 등수
+        return rank;
+    }
+
+    public void setRank(int rank) {             //set 등수
+        this.rank = rank;
+    }
+
+    public String getUmaName() {
+        return umaName;
+    }
+
+    public void setUmaName(String umaName) {
+        this.umaName = umaName;
     }
 }
