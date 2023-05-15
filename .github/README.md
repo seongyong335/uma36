@@ -62,6 +62,10 @@
 
 <h2>💻경마장 출력화면 순서</h2>
 <p>A. 경마장 입장 및 퇴장</p>
+<pre class="notranslate"><code>
+   경마 시작
+</code></pre>
+
 <p>B. 입장 메뉴</p>
 <ol>
   <pre class="notranslate"><code>
