@@ -61,14 +61,16 @@
 </ol>
 
 <h2>💻경마장 출력화면 순서</h2>
-A.<pre class="notranslate"><code>경마장 입장 및 퇴장
-</code></pre>
+<p>A. 경마장 입장 및 퇴장</p>
 <p>B. 입장 메뉴</p>
 <ol>
-  <li>경마 시작</li>
+  <pre class="notranslate"><code>
+   <li>경마 시작</li>
   <li>경마 승리 확률 및 배당 확인</li>
   <li>마권 사기</li>
   <li>경마장 퇴장</li>
+</code></pre>
+  
 </ol>
 <p>C. 경마 시작 시 출력되는 화면</p>
 <p>D. 경마 승리 확률 및 배당 확인</p>
