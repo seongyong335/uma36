@@ -1,5 +1,6 @@
 package uma.sahmyook.menu;
 
+
 import java.util.Scanner;
 
 public class MainMenu {
@@ -11,6 +12,8 @@ public class MainMenu {
     private SubMenu subMenu = new SubMenu(); // 서브 메뉴 클래스 생성
     // 메인 메뉴 메소드
     public void mainMenu(){
+
+
         do{
             System.out.println("================= UMA 경기장에 오신걸 환영합니다!! =================");
             System.out.println("메뉴를 선택해주세요!");
