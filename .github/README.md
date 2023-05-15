@@ -2,7 +2,7 @@
 <!-- Shared HTML Code -->
 
 <div align="center">
-  <a href="https://github.com/UMA-SAHMYOOK"><img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=UMA36&fontAlign=80&fontAlignY=40&color=gradient"/> 
+  <a href="https://github.com/seongyong335/uma36"><img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=UMA36&fontAlign=80&fontAlignY=40&color=gradient"/> 
 </div>
   <h1 align="center">UMA MEMBER</h1>
 <div align="center">
