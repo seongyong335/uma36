@@ -80,6 +80,12 @@ public class MainHorse {
         this.raceProgress.deleteCharAt(raceProgress.length()-2);
     }
 
+    public String showStatus() {
+        if(this.getRank() != 0){
+            return Integer.toString(this.getRank()) + "/9";
+        } else return Integer.toString(this.getDistance()) + "/30";
+    }
+
     public MainHorse(){}
 
     public MainHorse(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
