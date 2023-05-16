@@ -1,7 +1,6 @@
 package uma.sahmyook.function;
 
-import uma.sahmyook.horse.Horse1;
-import uma.sahmyook.horse.MainHorse;
+import uma.sahmyook.horse.*;
 
 public class UmaRace {
 
@@ -11,11 +10,12 @@ public class UmaRace {
 
     public void startGame(){                                    //경기 시작 메소드
         //경주마선언(차후엔 배당 낮은 순으로 등록된 말들을 선언하게끔 셋)
-        MainHorse a = new MainHorse("a");
-        MainHorse b = new MainHorse("b");
-        MainHorse c = new MainHorse("c");
-        MainHorse d = new MainHorse("d");
-
+        MainHorse a = new Horse1("a");
+        MainHorse b = new Horse7("b");
+        MainHorse c = new Horse8("c");
+        MainHorse d = new Horse9("d");
+        a.setStatistics(100, 20, 1);
+        System.out.println(a.getCountRace());
         //경주마들 경기 설정
         setGame(a);
         setGame(b);
@@ -60,6 +60,7 @@ public class UmaRace {
         for(int i = 1; i <= umaCount; i++){                                                            //경주마 수만큼 결과 출력
             if(i == horse1.getRank()){                                                                 //경주마 등수 높은 순으로 출력
                 System.out.println(horse1.getUmaName() + "가 " + horse1.getRank() + "등을 차지했습니다!");
+
             } else if(i == horse2.getRank()){
                 System.out.println(horse2.getUmaName() + "가 " + horse2.getRank() + "등을 차지했습니다!");
             } else if(i == horse3.getRank()){
@@ -68,6 +69,8 @@ public class UmaRace {
                 System.out.println(horse4.getUmaName() + "가 " + horse4.getRank() + "등을 차지했습니다!");
             }
         }
+
+
     }
 
     public void checkRace(MainHorse horse){                                                                //경주마 등수 설정 메소드

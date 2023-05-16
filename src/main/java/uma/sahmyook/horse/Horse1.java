@@ -6,9 +6,11 @@ public class Horse1 extends MainHorse implements HorseInterface1{
     * 속도 감소 없음 */
 
 
+
     public Horse1(){}
 
     public Horse1(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
+
 
         setUmaName(nam);
         setRaceProgress(nam);
@@ -37,6 +39,8 @@ public class Horse1 extends MainHorse implements HorseInterface1{
         //스피드 오버라이드해서 리턴받을 speed 조작할 수 있음
         return getSpeed();
     }
+
+
 
 
 }
