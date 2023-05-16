@@ -1,9 +1,14 @@
 package uma.sahmyook.function;
 
+import java.text.DecimalFormat;
+
 public class DividendCalculator {
+
     public double calculateDividend(int top3Count, int firstCount, int totalGames) {
-        // 배당률 계산 로직을 구현합니다.
-        double dividendRate = (totalGames /1.0) / (top3Count * 0.5 + firstCount * 0.2 + 1) ;
-        return dividendRate;
+        double dividendRate = ((totalGames * 1000.0) / (top3Count * 0.5 + firstCount * 0.2 + 1)) / 1000.0;
+        DecimalFormat df = new DecimalFormat("#.###");
+        return Double.parseDouble(df.format(dividendRate));
     }
+    // 소수점 3째자리까지 나오게 반올림하여 숫자로 만들기
+
 }
