@@ -20,6 +20,8 @@ public class UmaStadium {
         horses.add(new MainHorse("g"));
         horses.add(new MainHorse("h"));
         horses.add(new MainHorse("i"));
+
+
     }
 
     public List<MainHorse> getHorses() {
