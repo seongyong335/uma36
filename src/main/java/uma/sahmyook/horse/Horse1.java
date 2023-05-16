@@ -1,6 +1,6 @@
 package uma.sahmyook.horse;
 
-public class Horse1 extends MainHorse implements HorseInterface1{
+public class Horse1 extends MainHorse implements HorseInterface1 {
 
     /* 체크해보려고 만들어본 말객체입니다. 상속받을 말 클래스 완성 후 조정 할 수 있음. 아니면 머지할 떄 머지 안해도됩니다.  */
     @Override
