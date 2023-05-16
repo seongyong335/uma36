@@ -2,6 +2,7 @@ package uma.sahmyook.function;
 
 import uma.sahmyook.horse.Horse1;
 import uma.sahmyook.horse.MainHorse;
+import uma.sahmyook.score.Ticket;
 
 public class UmaRace {
 
@@ -68,7 +69,8 @@ public class UmaRace {
             } else if(i == horse4.getRank()){
                 System.out.println(horse4.getUmaName() + "가 " + horse4.getRank() + "등을 차지했습니다!");
             }
-        }
+            Ticket.useTicket();}
+
     }
 
     public void checkRace(MainHorse horse){                                                                //경주마 등수 설정 메소드

@@ -28,6 +28,19 @@ public class Ticket {
                 System.out.println("남은 스코어 :" + MainMenu.score + "  \\ " + "보유 마권 수 : " + MainMenu.ticket);
                 break;
             }
+        } while(true);
+    }
+
+
+    public static void useTicket(){
+        MainMenu.ticket = 0;
+
+
+
+    }
+
+}
+
 
 
 
@@ -49,8 +62,3 @@ public class Ticket {
 //
 //                default: System.out.println("잘못 입력하셨습니다. 다시 입력해주세요!");
 //            } break;
-        } while(true);
-    }
-
-
-}

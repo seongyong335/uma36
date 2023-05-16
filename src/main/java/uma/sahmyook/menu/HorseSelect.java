@@ -21,14 +21,6 @@ public class HorseSelect {
     }
     public void pickselect(){
         System.out.println("'" + MainMenu.horseNum + "'" + " 번 마를 선택하셨습니다!");
-        ticketselect();
-
-    }
-    public void ticketselect(){
-        System.out.println("================= 티켓 수 선택 =================");  // 스코어에 따라 조건문 작성
-        System.out.print("티켓 수를 선택해주세요! ( 1 ~ 10장) : ");
-        MainMenu.ticket = MainMenu.sc.nextInt();
-        System.out.println(MainMenu.ticket +"장을 선택하셨습니다!"); // 여기서 마권 장수 선택 따로 메소드를 만드는 게 좋을 것 같습니다.
         System.out.println("게임을 시작해주세요!");
         try {
             sleep(2000);
@@ -37,4 +29,7 @@ public class HorseSelect {
         }
 
     }
+
+
+
 }
