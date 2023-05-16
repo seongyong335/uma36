@@ -1,6 +1,5 @@
 package uma.sahmyook.function;
 
-import uma.sahmyook.horse.Horse1;
 import uma.sahmyook.horse.MainHorse;
 
 public class UmaRace {
@@ -9,29 +8,29 @@ public class UmaRace {
     protected static int ran;                                   //경기 등수 체크용
     private int umaCount = 4;                                   //경기 출장 경기마 수
 
+    private MainHorse mh;
     public void startGame(){                                    //경기 시작 메소드
         //경주마선언(차후엔 배당 낮은 순으로 등록된 말들을 선언하게끔 셋)
-        MainHorse a = new MainHorse("a");
-        MainHorse b = new MainHorse("b");
-        MainHorse c = new MainHorse("c");
-        MainHorse d = new MainHorse("d");
+        UmaThread a = new UmaThread(new MainHorse("a"));
+        UmaThread b = new UmaThread(new MainHorse("b"));
+        UmaThread c = new UmaThread(new MainHorse("c"));
+        UmaThread d = new UmaThread(new MainHorse("d"));
 
-        //경주마들 경기 설정
-        setGame(a);
-        setGame(b);
-        setGame(c);
-        setGame(d);
+        a.start();
+        b.start();
+        c.start();
+        d.start();
 
-        do{
-            //모두가 끝날때 까지 경기 시작
-            startUmaRace(a);
-            startUmaRace(b);
-            startUmaRace(c);
-            startUmaRace(d);
-        } while (a.isFinish() == false || b.isFinish() == false || c.isFinish() == false || d.isFinish() == false);
+        try {
+            a.join();
+            b.join();
+            c.join();
+            d.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
-        resultRace(a, b, c, d);             //경기 결과 출력
-
+        resultRace(a.getMh(), b.getMh(), c.getMh(), d.getMh());
     }
 
     public void setGame(MainHorse horse){                        //경기 설정 메소드
@@ -41,6 +40,7 @@ public class UmaRace {
     }
 
     public void startUmaRace(MainHorse horse){                 //경주마 달리기 시작 메소드
+        checkRace(horse);                                                       //움직이고나서 결승선을 통과했는지 확인
         System.out.println(horse.getRaceProgress());        //경주마 현 위치 표시
         if(horse.isFinish() == true){                       //골인한 상태면 아무런 행동을 하지 않는다.
         } else {                                            //골인한 상태가 아니면 달린다.
@@ -49,14 +49,29 @@ public class UmaRace {
                     horse.setRaceProgress();                                            //앞으로 움직는 모습 출력
                     horse.setDistance(horse.getDistance() - 1);                         //도착까지 남은 거리 설정
                 }
-                checkRace(horse);                                                       //움직이고나서 결승선을 통과했는지 확인
                 Thread.sleep(500);                                                //게임 속도 조절
             } catch (Exception e) {
             }
         }
     }
 
+    public void finishRace(MainHorse horse){
+        System.out.println("|" + "                                                     |" + horse.getUmaName());
+    }
+
     public void resultRace(MainHorse horse1, MainHorse horse2, MainHorse horse3, MainHorse horse4){                //경기 결과 출력 메소드
+//        for(int i = 1; i <= umaCount; i++){                                                            //경주마 수만큼 결과 출력
+//            if(i == horse1.getMh().getRank()){                                                                 //경주마 등수 높은 순으로 출력
+//                System.out.println(horse1.getMh().getUmaName() + "가 " + horse1.getMh().getRank() + "등을 차지했습니다!");
+//            } else if(i == horse2.getMh().getRank()){
+//                System.out.println(horse2.getMh().getUmaName() + "가 " + horse2.getMh().getRank() + "등을 차지했습니다!");
+//            } else if(i == horse3.getMh().getRank()){
+//                System.out.println(horse3.getMh().getUmaName() + "가 " + horse3.getMh().getRank() + "등을 차지했습니다!");
+//            } else if(i == horse4.getMh().getRank()){
+//                System.out.println(horse4.getMh().getUmaName() + "가 " + horse4.getMh().getRank() + "등을 차지했습니다!");
+//            }
+//        }
+
         for(int i = 1; i <= umaCount; i++){                                                            //경주마 수만큼 결과 출력
             if(i == horse1.getRank()){                                                                 //경주마 등수 높은 순으로 출력
                 System.out.println(horse1.getUmaName() + "가 " + horse1.getRank() + "등을 차지했습니다!");
@@ -68,6 +83,7 @@ public class UmaRace {
                 System.out.println(horse4.getUmaName() + "가 " + horse4.getRank() + "등을 차지했습니다!");
             }
         }
+
     }
 
     public void checkRace(MainHorse horse){                                                                //경주마 등수 설정 메소드

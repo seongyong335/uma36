@@ -67,7 +67,7 @@ public class MainHorse {
     }
 
     /* ----------------------------------경기 필요 필드, 메소드------------------------------------ */
-    /* 필수로 추가되어야 할 필드 */
+    /* UmaRace 필드 */
     private StringBuilder raceProgress = new StringBuilder();       //경기 진행 상태
     private int distance;                                           //남은 거리
     private int rank;                                               //등수
@@ -75,7 +75,12 @@ public class MainHorse {
 
     /* 필수로 추가되어야 할 메소드 */
     public void setRaceProgress() {                     //움직인만큼 이동 메소드
+
         this.raceProgress.insert(0, ' ');
+    }
+    public void setRaceProgress(String nam) {                     //이름추가
+
+        this.raceProgress.append(nam);
     }
 
     public MainHorse(){}
