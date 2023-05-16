@@ -97,7 +97,7 @@ public class UmaRace {
         if(horse.getDistance() <= 0){                                                                  //완주했으면 등수 매김
             horse.setRank(ran);
             ran += 1;
-            horse.setDistance(100);
+            horse.setDistance(10000);
             horse.setFinish(true);                                                                      //완주 상태로 바꿈
         }
     }

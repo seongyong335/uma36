@@ -7,11 +7,12 @@ public class UmaThread extends Thread{
     private UmaStadium us = new UmaStadium();
     public UmaThread(int num){
         i = num;
-    }
+    }       //생성할때 int를 받는다
 
     @Override
     public void run(){
-        ur.setGame(us.getHorses().get(i));
+
+        ur.setGame(us.getHorses().get(i));      //말 설정
 
         //경주마들 경기 설정
         while (!us.isRaceStatus()){
