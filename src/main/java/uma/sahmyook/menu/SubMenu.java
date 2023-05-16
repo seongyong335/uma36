@@ -1,14 +1,44 @@
 package uma.sahmyook.menu;
+import com.sun.tools.javac.Main;
+import uma.sahmyook.horse.*;
 import uma.sahmyook.score.*;
 
 import uma.sahmyook.function.UmaRace;
 
 public class SubMenu{
 
+
+
     public void subMenu(){
         HorseSelect horseSelect = new HorseSelect();
         /* 경기 생성 및 시작 */
         UmaRace ur = new UmaRace();
+
+        MainHorse[] horse = new MainHorse[9];
+        horse[0] = new Horse1("a");
+        horse[1] = new Horse2("b");
+        horse[2] = new Horse3("c");
+        horse[3] = new Horse4("d");
+        horse[4] = new Horse5("e");
+        horse[5] = new Horse6("f");
+        horse[6] = new Horse7("g");
+        horse[7] = new Horse8("h");
+        horse[8] = new Horse9("i");
+
+        horse[0].setStatistics(100, 20, 1);
+        horse[1].setStatistics(100, 20, 1);
+        horse[2].setStatistics(100, 20, 1);
+        horse[3].setStatistics(100, 20, 1);
+        horse[4].setStatistics(100, 20, 1);
+        horse[5].setStatistics(100, 20, 1);
+        horse[6].setStatistics(100, 20, 1);
+        horse[7].setStatistics(100, 20, 1);
+        horse[8].setStatistics(100, 20, 1);
+
+
+
+
+
 
         do{
 
@@ -22,7 +52,7 @@ public class SubMenu{
             System.out.print("메뉴 선택 : ");
             MainMenu.no = MainMenu.sc.nextInt();
             switch(MainMenu.no){
-                case 1: ur.startGame(); break; // 경기 시작 메소드;
+                case 1: ur.startGame(horse); break; // 경기 시작 메소드;
                 case 2: horseSelect.method(); break; // 응원하는 말 선택하는 메소드;
                 case 3: break; // 경마 승률 및 배당률 확인 하는 메소드;
                 case 4:
