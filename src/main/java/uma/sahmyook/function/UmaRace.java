@@ -2,7 +2,8 @@ package uma.sahmyook.function;
 
 import uma.sahmyook.horse.Horse1;
 import uma.sahmyook.horse.MainHorse;
-import uma.sahmyook.score.Ticket;
+import uma.sahmyook.score.BettingScore;
+import uma.sahmyook.score.Round;
 
 public class UmaRace {
 
@@ -69,7 +70,10 @@ public class UmaRace {
             } else if(i == horse4.getRank()){
                 System.out.println(horse4.getUmaName() + "가 " + horse4.getRank() + "등을 차지했습니다!");
             }
-            Ticket.useTicket();}
+
+        }
+        BettingScore.bettingResult(); // 베팅 결과 결산
+        Round.roundReset();  // 보유 마권 , 선택한 말 리셋
 
     }
 

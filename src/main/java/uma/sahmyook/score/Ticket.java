@@ -31,14 +31,6 @@ public class Ticket {
         } while(true);
     }
 
-
-    public static void useTicket(){
-        MainMenu.ticket = 0;
-
-
-
-    }
-
 }
 
 

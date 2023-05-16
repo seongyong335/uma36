@@ -7,7 +7,7 @@ public class MainMenu {
     static Scanner sc = new Scanner(System.in); // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
 
     static int no;                              // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
-    static int horseNum;
+    public static int horseNum;
     public static int ticket = 0;
 
    
