@@ -75,24 +75,29 @@ public class MainHorse {
         this.countVictory = countVictory;
     }
 
-    public void setCountRace() {            //경기수를 세팅하고 리턴받을 수 있는 메소드
+
+    public void plusCountRace(){
         this.countRace++;
     }
+    public void plusCountVictory(){
+        this.countVictory++;
+    }
+    public void plusCountTop3(){
+        this.countTop3++;
+    }
+    public void setHorseInfo(int countRace,int countVictory,int countTop3){
+        this.countRace = countRace;
+        this.countVictory = countVictory;
+        this.countTop3 = countTop3;
+    }
+
 
     public int getCountRace() {             //경기수를 리턴받는 메소드
         return countRace;
     }
 
-    public void setCountVictory() {         //승리한 경기수를 하나 증가시키는 메소드
-        this.countVictory++;
-    }
-
     public int getCountVictory() {          //승리한 경기수를 리턴받는 메소드
         return countVictory;
-    }
-
-    public void setCountTop3() {            //top3에 들어간 횟수를 하나 증가시키는 메소드
-        this.countTop3++;
     }
 
     public int getCountTop3() {             //top3에 들어간 경기수를 리턴받는 메소드
