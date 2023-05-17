@@ -1,6 +1,6 @@
 package uma.sahmyook.horse;
 
-public class Horse1 extends MainHorse implements HorseInterface1{
+public class Horse1 extends MainHorse implements HorseInterface1 {
 
     /* super클래스에서는 스테미너가 50미만이면 속도가 반으로 감소하지만 Horse1은 스테미너로 인한
     * 속도 감소 없음 */

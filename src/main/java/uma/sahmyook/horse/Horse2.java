@@ -1,7 +1,6 @@
 package uma.sahmyook.horse;
 
 public class Horse2 extends MainHorse {
-    /* 스테미너가 다른 말보다 느리게 줄어들음*/
 
     public Horse2() {
     }

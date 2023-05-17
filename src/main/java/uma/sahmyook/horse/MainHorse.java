@@ -96,16 +96,39 @@ public class MainHorse {
 
 
     /* ----------------------------------경기 필요 필드, 메소드------------------------------------ */
-    /* 필수로 추가되어야 할 필드 */
+    /* UmaRace 필드 */
     private StringBuilder raceProgress = new StringBuilder();       //경기 진행 상태
+    private StringBuilder raceSpace = new StringBuilder();
     private int distance;                                           //남은 거리
     private int rank;                                               //등수
     private boolean finish = true;                                  //경기 상태
+    private int turn;
 
     /* 필수로 추가되어야 할 메소드 */
+
+
+    public int getTurn() {
+        return turn;
+    }
+
+    public void setTurn(int turn) {
+        this.turn = turn;
+    }
+
+    public void showRun() {                     //움직인만큼 이동 메소드
+        this.raceProgress.insert(1, ' ');
+        this.raceProgress.deleteCharAt(raceProgress.length()-2);
+    }
+
+    public String showStatus() {
+        if(this.getRank() != 0){
+            return Integer.toString(this.getRank()) + "/9";
+        } else return Integer.toString(this.getDistance()) + "/30";
+
     public void setRaceProgress() {                     //움직인만큼 이동 메소드
 
         this.raceProgress.insert(0, ' ');
+
     }
     public void setRaceProgress(String nam) {                     //이름추가
 
@@ -116,7 +139,14 @@ public class MainHorse {
 
     public MainHorse(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
         this.umaName = nam;
-        this.raceProgress.append(getUmaName());
+    }
+
+    public void setRaceSpace() {
+        this.raceSpace.append(' ');
+    }
+
+    public void setRaceProgress() {
+        this.raceProgress.append("|" + getUmaName() + raceSpace + "|");
     }
 
     public StringBuilder getRaceProgress() {         //get 경기 진행상태
@@ -152,7 +182,5 @@ public class MainHorse {
         return umaName;
     }
 
-    public void setUmaName(String umaName) {
-        this.umaName = umaName;
-    }
+
 }
