@@ -23,7 +23,7 @@ public class UmaStadium {
         horses.add(new Horse9("i"));
 
         for(int i = 0 ; i< 9; i++) {
-            horses.get(i).setHorseInfo(130, 48, 40);
+            //horses.get(i).setHorseInfo(130, 48, 40);
             horses.get(i).calDividend();
             horses.get(i).calWinRate();
         }
