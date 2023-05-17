@@ -8,8 +8,9 @@ import java.util.Scanner;
 public class MainMenu {
     public static Scanner sc = new Scanner(System.in); // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
 
-    static int no;                              // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
+    static String no;                              // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
     public static int horseNum;
+    public static String horseStr;
     public static int ticket = 0;
 
    
@@ -27,11 +28,11 @@ public class MainMenu {
             System.out.println("1. 경기장 입장하기\n");
             System.out.println("2. 프로그램 종료\n");
             System.out.print("메뉴 선택 : ");
-            no = sc.nextInt();
+            no = sc.nextLine();
 
             switch(no){
-                case 1: subMenu.subMenu(); break;
-                case 2: menuExit.Method(1); break;
+                case "1": subMenu.subMenu(); break;
+                case "2": menuExit.Method(1); break;
                 default:
                     System.out.println("잘못 입력하셨습니다 다시 입력해주세요!");
             }

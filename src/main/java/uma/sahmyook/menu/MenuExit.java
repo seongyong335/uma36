@@ -13,7 +13,7 @@ public class MenuExit {
                 if(menuNum == 1 ) exit(0);  // 메인메뉴에서 종료
                 else if(menuNum == 0) return;                     // 서브메뉴에서 퇴장
             } else if("N".equals(str) || "n".equals(str)) {
-                MainMenu.no = 0; break;
+                MainMenu.no = "0"; break;
             } else System.out.println("잘못 입력하셨습니다. 다시 입력해 주세요!");
         } while(true);
     }
