@@ -1,9 +1,5 @@
 package uma.sahmyook.function;
 
-import uma.sahmyook.horse.Horse1;
-import uma.sahmyook.horse.MainHorse;
-import uma.sahmyook.score.BettingScore;
-import uma.sahmyook.score.Round;
 
 public class UmaRace {
 
@@ -11,28 +7,25 @@ public class UmaRace {
     protected static int ran;                                   //경기 등수 체크용
     private int umaCount = 4;                                   //경기 출장 경기마 수
 
-    public void startGame(){                                    //경기 시작 메소드
+    public void startGame(MainHorse[] horse){                                    //경기 시작 메소드
         //경주마선언(차후엔 배당 낮은 순으로 등록된 말들을 선언하게끔 셋)
-        MainHorse a = new MainHorse("a");
-        MainHorse b = new MainHorse("b");
-        MainHorse c = new MainHorse("c");
-        MainHorse d = new MainHorse("d");
+
 
         //경주마들 경기 설정
-        setGame(a);
-        setGame(b);
-        setGame(c);
-        setGame(d);
+        for(int i = 0; i<9;i++) {
+            setGame(horse[i]);
+        }
+
 
         do{
             //모두가 끝날때 까지 경기 시작
-            startUmaRace(a);
-            startUmaRace(b);
-            startUmaRace(c);
-            startUmaRace(d);
-        } while (a.isFinish() == false || b.isFinish() == false || c.isFinish() == false || d.isFinish() == false);
+            startUmaRace(horse[0]);
+            startUmaRace(horse[1]);
+            startUmaRace(horse[2]);
+            startUmaRace(horse[3]);
+        } while (horse[0].isFinish() == false || horse[1].isFinish() == false || horse[2].isFinish() == false || horse[3].isFinish() == false);
 
-        resultRace(a, b, c, d);             //경기 결과 출력
+        resultRace(horse[0], horse[1], horse[2], horse[3]);             //경기 결과 출력
 
     }
 
@@ -63,6 +56,7 @@ public class UmaRace {
         for(int i = 1; i <= umaCount; i++){                                                            //경주마 수만큼 결과 출력
             if(i == horse1.getRank()){                                                                 //경주마 등수 높은 순으로 출력
                 System.out.println(horse1.getUmaName() + "가 " + horse1.getRank() + "등을 차지했습니다!");
+
             } else if(i == horse2.getRank()){
                 System.out.println(horse2.getUmaName() + "가 " + horse2.getRank() + "등을 차지했습니다!");
             } else if(i == horse3.getRank()){
@@ -72,8 +66,10 @@ public class UmaRace {
             }
 
         }
+
         BettingScore.bettingResult(); // 베팅 결과 결산
         Round.roundReset();  // 보유 마권 , 선택한 말 리셋
+
 
     }
 
