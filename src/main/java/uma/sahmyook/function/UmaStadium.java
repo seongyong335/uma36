@@ -21,6 +21,7 @@ public class UmaStadium {
         horses.add(new Horse7("g"));
         horses.add(new Horse8("h"));
         horses.add(new Horse9("i"));
+
     }
 
     public List<MainHorse> getHorses() {
