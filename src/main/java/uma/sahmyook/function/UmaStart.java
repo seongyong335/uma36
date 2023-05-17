@@ -12,7 +12,7 @@ public class UmaStart {
     BettingScore bs = new BettingScore();
 
     public void umaStart() {
-        if (0 >= MainMenu.ticket || MainMenu.ticket <= 11 && MainMenu.horseNum == 0){
+        if ((0 < MainMenu.ticket && MainMenu.ticket < 11) && MainMenu.horseNum == 0){
             System.out.println("응원 말을 선택해주세요");
         return; }
             /* 경기 생성 및 시작 */

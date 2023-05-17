@@ -15,7 +15,6 @@ public class SubMenu{
         HorseCheck horseCheck = new HorseCheck();
         UmaStart umaStart = new UmaStart();
 
-
         do{
             System.out.println("================= 경기장에 입장하셨습니다! 원하시는 것을 선택해주세요. =================");
             System.out.println("현재 선택한 말 번호 : " + MainMenu.horseNum + "\n티켓 수 : " + MainMenu.ticket + " " + "\n현재 스코어 : " + MainMenu.score + "점");
