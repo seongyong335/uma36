@@ -12,6 +12,7 @@ public class SubMenu{
 
     public void subMenu(){
         HorseSelect horseSelect = new HorseSelect();
+        HorseCheck horseCheck = new HorseCheck();
         UmaStart umaStart = new UmaStart();
 
 
@@ -28,7 +29,7 @@ public class SubMenu{
             switch(MainMenu.no){
                 case 1: umaStart.umaStart(); break; // 경기 시작 메소드;
                 case 2: horseSelect.method(); break; // 응원하는 말 선택하는 메소드;
-                case 3: break; // 경마 승률 및 배당률 확인 하는 메소드;
+                case 3: horseCheck.method(); break; // 경마 승률 및 배당률 확인 하는 메소드;
                 case 4:
                     Ticket ticket = new Ticket();
                     ticket.buyTicket(); break; // 마권 구입하는 메소드;
