@@ -6,7 +6,7 @@ import uma.sahmyook.function.UmaStadium;
 import java.util.Scanner;
 
 public class MainMenu {
-    static Scanner sc = new Scanner(System.in); // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
+    public static Scanner sc = new Scanner(System.in); // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
 
     static int no;                              // 다른 클래스에서 사용할 수 있게 스태틱으로 선언
     public static int horseNum;
@@ -21,10 +21,11 @@ public class MainMenu {
     public static void main(String[] args) {
 
         do{
-            System.out.println("================= UMA 경기장에 오신걸 환영합니다!! =================");
-            System.out.println("메뉴를 선택해주세요!");
-            System.out.println("1. 경기장 입장하기");
-            System.out.println("2. 프로그램 종료");
+
+            System.out.println("================= UMA 경기장에 오신걸 환영합니다!! =================\n\n");
+            System.out.println("메뉴를 선택해주세요!\n");
+            System.out.println("1. 경기장 입장하기\n");
+            System.out.println("2. 프로그램 종료\n");
             System.out.print("메뉴 선택 : ");
             no = sc.nextInt();
 

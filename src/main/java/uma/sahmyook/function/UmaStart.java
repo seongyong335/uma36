@@ -1,6 +1,8 @@
 package uma.sahmyook.function;
 
 
+import uma.sahmyook.menu.MainMenu;
+
 import static uma.sahmyook.menu.MainMenu.us;
 
 public class UmaStart {
@@ -43,11 +45,11 @@ public class UmaStart {
             throw new RuntimeException(P);
         }
 
-        for(int j = 0; j < 10; j++){
-            System.out.println();
-        }
-
         us.checkRank();
+        System.out.print("Enter를 눌러주세요...");
+        MainMenu.sc.nextLine();
+        MainMenu.sc.nextLine();
 
+        System.out.println("\n");
     }
 }
