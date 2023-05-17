@@ -15,10 +15,10 @@ public class Ticket {
             System.out.print("1~10개의 마권을 구매할 수 있습니다. 마권없이 게임하기(0번): ");
             Scanner sc = new Scanner(System.in);
             no = sc.nextInt();
-            if(MainMenu.ticket + no >= 10){
+            if(MainMenu.ticket + no > 10){
                 System.out.println("마권을 10개 이상 초과해서 보유할 수 없습니다.");
                 break;
-            } else if (MainMenu.score <= no*1000){
+            } else if (MainMenu.score < no*1000){
                 System.out.println("보유 스코어가 부족합니다..");
                 break;
             }
