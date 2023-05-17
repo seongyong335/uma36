@@ -12,7 +12,7 @@ public class BettingScore {
     public void bettingResult(){
         if (us.getHorses().get(MainMenu.horseNum-1).getRank() == 1){
             System.out.print(us.getHorses().get(MainMenu.horseNum-1).getUmaName()+"!!! 훌륭히 완승!! 레이스를 제패합니다! ");
-            MainMenu.score += (1000 * MainMenu.ticket * us.getHorses().get(MainMenu.horseNum-1).calDividend());
+            MainMenu.score += (1000 * MainMenu.ticket * us.getHorses().get(MainMenu.horseNum-1).getDividendRate());
         } else if(MainMenu.ticket == 0){
             System.out.print("경기 종료! ");
         }
