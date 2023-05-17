@@ -1,6 +1,7 @@
 package uma.sahmyook.function;
 
-import uma.sahmyook.horse.*;
+import uma.sahmyook.horse.MainHorse;
+
 public class UmaRace {
 
     public static int ran = 1;                                   //경기 등수 체크용
@@ -33,6 +34,7 @@ public class UmaRace {
             } catch (Exception e) {
             }
         }
+        horse.setTurn(horse.getTurn()+1);
     }
 
     public void checkRace(MainHorse horse){                                                                //경주마 등수 설정 메소드

@@ -1,6 +1,6 @@
 package uma.sahmyook.function;
 
-import uma.sahmyook.horse.*;
+import uma.sahmyook.horse.MainHorse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +9,7 @@ public class UmaStadium {
     static List <MainHorse> horses = new ArrayList<>();
     private boolean raceStatus;
     private int umaCount = 9;       //출전말 갯다
+    private int tmpTurn = 0;
     public UmaStadium() {
         //출전 말 등록
         horses.add(new MainHorse("a"));
@@ -20,12 +21,21 @@ public class UmaStadium {
         horses.add(new MainHorse("g"));
         horses.add(new MainHorse("h"));
         horses.add(new MainHorse("i"));
-
-
     }
 
     public List<MainHorse> getHorses() {
         return horses;
+    }
+
+    public void clear(){
+        for(int i = 0; i < umaCount; i++){
+            tmpTurn += horses.get(i).getTurn();
+        }
+        if(tmpTurn % 9 == 0){
+            for(int j = 0; j < 10; j++){
+                System.out.println();
+            }
+        }
     }
 
     public void checkFinish(){      //끝난거 체크

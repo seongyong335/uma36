@@ -73,8 +73,18 @@ public class MainHorse {
     private int distance;                                           //남은 거리
     private int rank;                                               //등수
     private boolean finish = true;                                  //경기 상태
+    private int turn;
 
     /* 필수로 추가되어야 할 메소드 */
+
+    public int getTurn() {
+        return turn;
+    }
+
+    public void setTurn(int turn) {
+        this.turn = turn;
+    }
+
     public void showRun() {                     //움직인만큼 이동 메소드
         this.raceProgress.insert(1, ' ');
         this.raceProgress.deleteCharAt(raceProgress.length()-2);
