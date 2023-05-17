@@ -1,5 +1,6 @@
 package uma.sahmyook.function;
 
+
 import uma.sahmyook.horse.MainHorse;
 
 public class UmaRace {
@@ -17,6 +18,7 @@ public class UmaRace {
     }
 
     public void startUmaRace(MainHorse horse){                 //경주마 달리기 시작 메소드
+
         checkRace(horse);                                                       //움직이고나서 결승선을 통과했는지 확인
         System.out.println(horse.getRaceProgress() + " " + horse.showStatus());        //경주마 현 위치 표시
         if(horse.isFinish() == true){                       //골인한 상태면 아무런 행동을 하지 않는다.

@@ -1,16 +1,11 @@
 package uma.sahmyook;
 
 
-import uma.sahmyook.function.ClearThread;
-import uma.sahmyook.function.UmaStadium;
-import uma.sahmyook.function.UmaThread;
-
 public class Application {
 
     public static UmaStadium us = new UmaStadium();           //경기장 생성
 
     public static void main(String[] args) {
-
             /* 경기 생성 및 시작 */
         UmaThread a = new UmaThread(0);
         UmaThread b = new UmaThread(1);

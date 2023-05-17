@@ -1,8 +1,28 @@
 
-<!-- Shared HTML Code -->
-
-<h1>경마게임</h1>
-
+<!-- Updated HTML Code -->
+<div align="center">
+  <a href="https://github.com/UMA-SAHMYOOK"><img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=UMA36&fontAlign=80&fontAlignY=40&color=gradient"/> 
+</div>
+<h1 align="center">👪UMA MEMBER</h1>
+<div align="left">
+  <div>
+    <a href="https://github.com/seongyong335"><img src="https://img.shields.io/badge/최성용-FAD0C9?style=for-the-badge&logo=github&logoColor=6E6E6D" /></a>
+  </div>
+  <div>
+    <a href="https://github.com/asm2005"><img src="https://img.shields.io/badge/안성민-FF9900?style=for-the-badge&logo=github&logoColor=white" /></a>
+  </div>
+ <div>
+  <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a>
+</div>
+<a href="https://github.com/kmc6381"><img src="https://img.shields.io/badge/강민철-0000FF?style=for-the-badge&logo=github&logoColor=white" /></a>
+<div>
+  <a href="https://github.com/OneReal3203"><img src="https://img.shields.io/badge/양한진-00FF00?style=for-the-badge&logo=github&logoColor=white" /></a>
+</div>
+</div>
+<br>
+  <div align="center">
+    <a href="https://www.notion.so/UMA36-Milestone-4dfb98abd5c64d63b732d0c0720f4e09?pvs=4"><img src="https://img.shields.io/badge/마일스톤-FAD0C9?style=for-the-badge&logo=notion&logoColor=000000" /></a>
+  </div>  
 <h2>📑요구사항 정의</h2>
 <ol>
   <li>경마에 참여하는 말의 마리수는 9마리로 정한다.</li>
@@ -61,18 +81,33 @@
 </ol>
 
 <h2>💻경마장 출력화면 순서</h2>
-A.<pre class="notranslate"><code>경마장 입장 및 퇴장
+<p>A. 경마장 입장 및 퇴장</p>
+<ol>
+<pre class="notranslate"><code>
+  <li>경마장에 입장하셨습니다.</li>
 </code></pre>
+  </ol>
+
 <p>B. 입장 메뉴</p>
 <ol>
-  <li>경마 시작</li>
+  <pre class="notranslate"><code>
+   <li>경마 시작</li>
   <li>경마 승리 확률 및 배당 확인</li>
   <li>마권 사기</li>
   <li>경마장 퇴장</li>
+</code></pre>
 </ol>
 <p>C. 경마 시작 시 출력되는 화면</p>
+<ol>
+<pre class="notranslate"><code>
+  <li>경마 게임을 시작하였습니다.</li>
+</code></pre>
+  </ol>
+
 <p>D. 경마 승리 확률 및 배당 확인</p>
-<p>1번마 승리 확률: ____, 배당 확률: ____</p>
+<ol>
+<pre class="notranslate"><code>
+ <p>1번마 승리 확률: ____, 배당 확률: ____</p>
 <p>2번마 승리 확률: ____, 배당 확률: ____</p>
 <p>3번마 승리 확률: ____, 배당 확률: ____</p>
 <p>4번마 승리 확률: ____, 배당 확률: ____</p>
@@ -81,10 +116,16 @@ A.<pre class="notranslate"><code>경마장 입장 및 퇴장
 <p>7번마 승리 확률: ____, 배당 확률: ____</p>
 <p>8번마 승리 확률: ____, 배당 확률: ____</p>
 <p>9번마 승리 확률: ____, 배당 확률: ____</p>
-
-
+</code></pre>
+  </ol>
+<p>E. 마권 구매
+  <ol>
+  <pre class="notranslate"><code>
+   마권을 최대 10개까지 구매할 수 있습니다. (입력 필요)
+</code></pre>
+</ol>
   
-<p>E. 마권 사기 -> 마권을 최대 10개까지 구매할 수 있습니다. (입력 필요)</p> 
+  <h2>🎥경마게임 구현 영상</h2>
 
 
 

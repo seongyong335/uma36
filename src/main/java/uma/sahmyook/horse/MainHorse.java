@@ -2,11 +2,17 @@ package uma.sahmyook.horse;
 
 public class MainHorse {
 
+    private double dividend;
+
+
     private int speed;                               // 리턴받을 랜덤한 속도값, 리턴받아서 쓸꺼라 protected 접근자 사용
     private int countRace;                    // 경기수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
     private int countVictory;                 // 우승횟수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
     private int countTop3;                    // 탑3에 들어간 횟수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
-    public int stamina = 100;                       // 말의 스테미너를 저장하는 변수
+
+
+
+    private int stamina = 100;                       // 말의 스테미너를 저장하는 변수
     private String umaName;
 
     public int calMove(){                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
@@ -30,10 +36,14 @@ public class MainHorse {
     //말이 한번 달릴때 스테미너 10을 사용하는 함수 ( 아직 미완성 )
     public void  useStamina(){
 
-        this.stamina = this.stamina - 10;
+        setStamina(getStamina()-10);
 
     }
-
+    public void setStatistics(int countRace, int countTop3, int countVictory){
+        this.countRace = countRace;
+        this.countTop3 = countTop3;
+        this.countVictory = countVictory;
+    }
     public void setCountRace() {            //경기수를 세팅하고 리턴받을 수 있는 메소드
         this.countRace++;
     }
@@ -66,6 +76,25 @@ public class MainHorse {
         this.speed = speed;
     }
 
+    public int getStamina() {
+        return this.stamina;
+    }
+
+    public double getDividend() {
+        return dividend;
+    }
+
+    public void setDividend(double dividend) {
+        this.dividend = dividend;
+    }
+
+
+    public int setStamina(int stamina) {
+        this.stamina = stamina;
+        return this.stamina;
+    }
+
+
     /* ----------------------------------경기 필요 필드, 메소드------------------------------------ */
     /* UmaRace 필드 */
     private StringBuilder raceProgress = new StringBuilder();       //경기 진행 상태
@@ -76,6 +105,7 @@ public class MainHorse {
     private int turn;
 
     /* 필수로 추가되어야 할 메소드 */
+
 
     public int getTurn() {
         return turn;
@@ -94,6 +124,15 @@ public class MainHorse {
         if(this.getRank() != 0){
             return Integer.toString(this.getRank()) + "/9";
         } else return Integer.toString(this.getDistance()) + "/30";
+
+    public void setRaceProgress() {                     //움직인만큼 이동 메소드
+
+        this.raceProgress.insert(0, ' ');
+
+    }
+    public void setRaceProgress(String nam) {                     //이름추가
+
+        this.raceProgress.append(nam);
     }
 
     public MainHorse(){}
@@ -113,6 +152,7 @@ public class MainHorse {
     public StringBuilder getRaceProgress() {         //get 경기 진행상태
         return this.raceProgress;
     }
+
 
     public int getDistance() {                      //get 남은거리
         return distance;
@@ -141,5 +181,6 @@ public class MainHorse {
     public String getUmaName() {
         return umaName;
     }
+
 
 }
