@@ -1,5 +1,7 @@
 package uma.sahmyook.function;
-import static uma.sahmyook.Application.us;
+
+import static uma.sahmyook.menu.MainMenu.us;
+
 public class ClearThread extends Thread{
 
     public void run(){

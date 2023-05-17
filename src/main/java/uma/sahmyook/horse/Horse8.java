@@ -7,8 +7,7 @@ public class Horse8 extends MainHorse{
 
     public Horse8(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
 
-        setUmaName(nam);
-        setRaceProgress(nam);
+        this.setUmaName(nam);
 
     }
 

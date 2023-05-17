@@ -1,6 +1,8 @@
 package uma.sahmyook.function;
 
-import static uma.sahmyook.Application.us;
+
+import static uma.sahmyook.menu.MainMenu.us;
+
 public class UmaThread extends Thread{
 
     private UmaRace ur = new UmaRace();

@@ -1,6 +1,8 @@
 package uma.sahmyook.menu;
 
 
+import uma.sahmyook.function.UmaStadium;
+
 import java.util.Scanner;
 
 public class MainMenu {
@@ -13,10 +15,10 @@ public class MainMenu {
    
     public static int score = 10000;
     static MenuExit menuExit = new MenuExit(); // 메뉴 나가기 클래스 생성
-    private SubMenu subMenu = new SubMenu(); // 서브 메뉴 클래스 생성
+    static SubMenu subMenu = new SubMenu(); // 서브 메뉴 클래스 생성
+    public static UmaStadium us = new UmaStadium();           //경기장 생성
     // 메인 메뉴 메소드
-    public void mainMenu(){
-
+    public static void main(String[] args) {
 
         do{
             System.out.println("================= UMA 경기장에 오신걸 환영합니다!! =================");

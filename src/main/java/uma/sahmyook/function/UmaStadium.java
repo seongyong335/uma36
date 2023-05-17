@@ -1,6 +1,6 @@
 package uma.sahmyook.function;
 
-import uma.sahmyook.horse.MainHorse;
+import uma.sahmyook.horse.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,15 +12,15 @@ public class UmaStadium {
     private int tmpTurn = 0;
     public UmaStadium() {
         //출전 말 등록
-        horses.add(new MainHorse("a"));
-        horses.add(new MainHorse("b"));
-        horses.add(new MainHorse("c"));
-        horses.add(new MainHorse("d"));
-        horses.add(new MainHorse("e"));
-        horses.add(new MainHorse("f"));
-        horses.add(new MainHorse("g"));
-        horses.add(new MainHorse("h"));
-        horses.add(new MainHorse("i"));
+        horses.add(new Horse1("a"));
+        horses.add(new Horse2("b"));
+        horses.add(new Horse3("c"));
+        horses.add(new Horse4("d"));
+        horses.add(new Horse5("e"));
+        horses.add(new Horse6("f"));
+        horses.add(new Horse7("g"));
+        horses.add(new Horse8("h"));
+        horses.add(new Horse9("i"));
     }
 
     public List<MainHorse> getHorses() {
@@ -81,5 +81,9 @@ public class UmaStadium {
 
     public void setRaceStatus(boolean raceStatus) {
         this.raceStatus = raceStatus;
+    }
+
+    public void setTmpTurn() {
+        this.tmpTurn = 0;
     }
 }

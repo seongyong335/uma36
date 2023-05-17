@@ -11,16 +11,15 @@ public class MainHorse {
     private int countTop3;                    // 탑3에 들어간 횟수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
 
 
-
     private int stamina = 100;                       // 말의 스테미너를 저장하는 변수
     private String umaName;
 
-    public int calMove(){                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
+    public int calMove() {                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
         randomSpeed();
         useStamina();                                   // 달린후 스태미너를 사용합니다.
 
-        if(stamina<50){                                 //스테미너가 50미만으로 떨어지면 스피드가 반으로 줄어든다.
-            this.speed = getSpeed()/2;                           //인터페이스로 스테미너 다시 100으로 돌려도되는데 그냥 여기값에서 다시 조정해서 해도됨
+        if (stamina < 50) {                                 //스테미너가 50미만으로 떨어지면 스피드가 반으로 줄어든다.
+            this.speed = getSpeed() / 2;                           //인터페이스로 스테미너 다시 100으로 돌려도되는데 그냥 여기값에서 다시 조정해서 해도됨
         }
 
         //스피드 오버라이드해서 리턴받을 speed 조작할 수 있음
@@ -28,22 +27,28 @@ public class MainHorse {
     }
 
     //말의 속도를 랜덤값으로 받는 함수 ( 아직 미완성 )
-    public void randomSpeed(){                              //랜덤으로 스피드 설정
+    public void randomSpeed() {                              //랜덤으로 스피드 설정
 
-        this.speed = (int)((Math.random()*8)+1) * (int)((Math.random()*8)+1);
+        this.speed = (int) ((Math.random() * 8) + 1) * (int) ((Math.random() * 8) + 1);
     }
 
     //말이 한번 달릴때 스테미너 10을 사용하는 함수 ( 아직 미완성 )
-    public void  useStamina(){
+    public void useStamina() {
 
-        setStamina(getStamina()-10);
+        setStamina(getStamina() - 10);
 
     }
-    public void setStatistics(int countRace, int countTop3, int countVictory){
+
+    public void setUmaName(String umaName) {
+        this.umaName = umaName;
+    }
+
+    public void setStatistics(int countRace, int countTop3, int countVictory) {
         this.countRace = countRace;
         this.countTop3 = countTop3;
         this.countVictory = countVictory;
     }
+
     public void setCountRace() {            //경기수를 세팅하고 리턴받을 수 있는 메소드
         this.countRace++;
     }
@@ -106,6 +111,17 @@ public class MainHorse {
 
     /* 필수로 추가되어야 할 메소드 */
 
+    public void resetRaceSpace() {
+        this.raceProgress.delete(0,this.raceProgress.length());
+    }
+
+    public void resetRank(){
+        this.rank = 0;
+    }
+
+    public void resetSpace(){
+        this.raceSpace.delete(0,this.raceSpace.length());
+    }
 
     public int getTurn() {
         return turn;
@@ -124,15 +140,6 @@ public class MainHorse {
         if(this.getRank() != 0){
             return Integer.toString(this.getRank()) + "/9";
         } else return Integer.toString(this.getDistance()) + "/30";
-
-    public void setRaceProgress() {                     //움직인만큼 이동 메소드
-
-        this.raceProgress.insert(0, ' ');
-
-    }
-    public void setRaceProgress(String nam) {                     //이름추가
-
-        this.raceProgress.append(nam);
     }
 
     public MainHorse(){}
@@ -152,7 +159,6 @@ public class MainHorse {
     public StringBuilder getRaceProgress() {         //get 경기 진행상태
         return this.raceProgress;
     }
-
 
     public int getDistance() {                      //get 남은거리
         return distance;
@@ -182,5 +188,5 @@ public class MainHorse {
         return umaName;
     }
 
+    }
 
-}
