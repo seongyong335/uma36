@@ -2,12 +2,17 @@ package uma.sahmyook.function;
 
 
 import uma.sahmyook.menu.MainMenu;
+import uma.sahmyook.score.BettingScore;
+import uma.sahmyook.score.Round;
 
 import static uma.sahmyook.menu.MainMenu.us;
 
 public class UmaStart {
 
+    BettingScore bs = new BettingScore();
+
     public void umaStart() {
+        // if (여기다 0>마권 , 마권<11 horesNum == 0){sout "말을 선택해주세요"} return;
             /* 경기 생성 및 시작 */
         UmaThread a = new UmaThread(0);
         UmaThread b = new UmaThread(1);
@@ -46,6 +51,8 @@ public class UmaStart {
         }
 
         us.checkRank();
+        bs.bettingResult();
+        Round.roundReset();
         System.out.print("Enter를 눌러주세요...");
         MainMenu.sc.nextLine();
         MainMenu.sc.nextLine();
