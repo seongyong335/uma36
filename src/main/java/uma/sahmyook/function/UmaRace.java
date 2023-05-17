@@ -1,6 +1,5 @@
 package uma.sahmyook.function;
 
-import uma.sahmyook.horse.*;
 
 public class UmaRace {
 
@@ -65,7 +64,11 @@ public class UmaRace {
             } else if(i == horse4.getRank()){
                 System.out.println(horse4.getUmaName() + "가 " + horse4.getRank() + "등을 차지했습니다!");
             }
+
         }
+
+        BettingScore.bettingResult(); // 베팅 결과 결산
+        Round.roundReset();  // 보유 마권 , 선택한 말 리셋
 
 
     }

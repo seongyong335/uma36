@@ -43,7 +43,7 @@ public class SubMenu{
         do{
 
             System.out.println("================= 경기장에 입장하셨습니다! 원하시는 것을 선택해주세요. =================");
-            System.out.println("현재 선택한 말 번호 : " + MainMenu.horseNum + " 현재 선택한 티켓 수 : " + MainMenu.ticket + " " + "현재 스코어 : " + MainMenu.score + "점");
+            System.out.println("현재 선택한 말 번호 : " + MainMenu.horseNum + " 티켓 수 : " + MainMenu.ticket + " " + "현재 스코어 : " + MainMenu.score + "점");
             System.out.println("1. 경기 시작!");
             System.out.println("2. 응원하는 말 선택");
             System.out.println("3. 응원마 승률 및 정보 확인");
