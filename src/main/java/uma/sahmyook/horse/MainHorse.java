@@ -37,7 +37,7 @@ public class MainHorse {
     }
 
     public double calWinRate(){
-        this.winRate = (this.getCountVictory() / this.getCountRace() * 100);
+        this.winRate = ((this.getCountVictory()*100.0) * 100.0) / this.getCountRace() / 100.0;
         return this.winRate;
     }   // 승률
     public int calMove() {                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
