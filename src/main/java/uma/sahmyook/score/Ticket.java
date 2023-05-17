@@ -1,5 +1,5 @@
 package uma.sahmyook.score;
-import uma.sahmyook.*;
+
 import uma.sahmyook.menu.MainMenu;
 
 import java.util.Scanner;

@@ -6,14 +6,11 @@ public class Horse1 extends MainHorse implements HorseInterface1 {
     * 속도 감소 없음 */
 
 
-
     public Horse1(){}
 
     public Horse1(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
 
-
-        setUmaName(nam);
-        setRaceProgress(nam);
+        this.setUmaName(nam);
     }
 
     @Override

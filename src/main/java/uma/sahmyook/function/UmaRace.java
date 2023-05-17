@@ -3,11 +3,18 @@ package uma.sahmyook.function;
 
 import uma.sahmyook.horse.MainHorse;
 
+import static uma.sahmyook.menu.MainMenu.us;
+
 public class UmaRace {
 
     public static int ran = 1;                                   //경기 등수 체크용
 
-    public void setGame(MainHorse horse){                        //경기 설정 메소드
+    public void setGame(MainHorse horse){//경기 설정 메소드
+        us.setTmpTurn();
+        us.setRaceStatus(false);
+        horse.resetRank();
+        horse.resetSpace();
+        horse.resetRaceSpace();
         horse.setDistance(30);              //경기 길이 설정
         ran = 1;                            //경기 끝나면 등수 설정용
         horse.setFinish(false);             //경주마의 상태를 경기 상태로 변경

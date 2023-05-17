@@ -1,11 +1,11 @@
-package uma.sahmyook;
+package uma.sahmyook.function;
 
 
-public class Application {
+import static uma.sahmyook.menu.MainMenu.us;
 
-    public static UmaStadium us = new UmaStadium();           //경기장 생성
+public class UmaStart {
 
-    public static void main(String[] args) {
+    public void umaStart() {
             /* 경기 생성 및 시작 */
         UmaThread a = new UmaThread(0);
         UmaThread b = new UmaThread(1);
@@ -17,7 +17,7 @@ public class Application {
         UmaThread h = new UmaThread(7);
         UmaThread i = new UmaThread(8);
 
-        ClearThread clear = new ClearThread();
+        //ClearThread clear = new ClearThread();
 
         a.start();
         b.start();
@@ -28,7 +28,7 @@ public class Application {
         g.start();
         h.start();
         i.start();
-        clear.start();
+        //clear.start();
         try {
             a.join();
             b.join();
