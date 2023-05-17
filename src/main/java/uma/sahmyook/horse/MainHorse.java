@@ -1,5 +1,7 @@
 package uma.sahmyook.horse;
 
+import java.text.DecimalFormat;
+
 public class MainHorse {
 
     private double dividend;
@@ -14,6 +16,30 @@ public class MainHorse {
     private int stamina = 100;                       // 말의 스테미너를 저장하는 변수
     private String umaName;
 
+    private double dividendRate;
+
+    public DecimalFormat df = new DecimalFormat("#.###");
+
+    private double winRate;
+
+    public double calDividend() {
+        this.dividendRate = ((this.getCountRace() * 1000.0) / (this.getCountTop3()* 0.5 + this.getCountVictory() * 0.2 + 1)) / 1000.0;
+
+        return Double.parseDouble(df.format(dividendRate));
+    }   // 소수점 3째자리까지 나오게 반올림하여 숫자로 만들기
+
+    public double getDividendRate() {
+        return dividendRate;
+    }
+
+    public double getWinRate() {
+        return winRate;
+    }
+
+    public double calWinRate(){
+        this.winRate = (this.getCountVictory() / this.getCountRace() * 100);
+        return this.winRate;
+    }   // 승률
     public int calMove() {                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
         randomSpeed();
         useStamina();                                   // 달린후 스태미너를 사용합니다.
