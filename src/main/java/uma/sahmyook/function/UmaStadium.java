@@ -22,6 +22,13 @@ public class UmaStadium {
         horses.add(new Horse8("h"));
         horses.add(new Horse9("i"));
 
+        for(int i = 0 ; i< 9; i++) {
+            horses.get(i).setHorseInfo(130, 48, 40);
+            horses.get(i).calDividend();
+            horses.get(i).calWinRate();
+        }
+
+
     }
 
     public List<MainHorse> getHorses() {
@@ -74,7 +81,22 @@ public class UmaStadium {
                 System.out.println(horses.get(8).getUmaName() + "가 " + horses.get(8).getRank() + "등을 차지했습니다!");
             }
         }
+        for(int i = 0; i < 9; i++){
+            if(horses.get(i).getRank() == 1){
+                horses.get(i).plusCountVictory();
+                horses.get(i).plusCountTop3();
+            }
+            if(horses.get(i).getRank() == 2 || horses.get(i).getRank() == 3){
+                horses.get(i).plusCountTop3();
+            }
+            horses.get(i).plusCountRace();
+            horses.get(i).calDividend();
+            horses.get(i).calWinRate();
+        }
+
+
     }
+
 
     public boolean isRaceStatus() {
         return raceStatus;

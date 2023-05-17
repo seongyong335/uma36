@@ -16,16 +16,16 @@ public class MainHorse {
     private int stamina = 100;                       // 말의 스테미너를 저장하는 변수
     private String umaName;
 
-    private double dividendRate;
+    private double dividendRate = 0.0 ;
 
     public DecimalFormat df = new DecimalFormat("#.###");
+    public DecimalFormat ddf = new DecimalFormat("#.#");
 
-    private double winRate;
+    private double winRate = 0.0;
 
-    public double calDividend() {
+    public void calDividend() {
         this.dividendRate = ((this.getCountRace() * 1000.0) / (this.getCountTop3()* 0.5 + this.getCountVictory() * 0.2 + 1)) / 1000.0;
-
-        return Double.parseDouble(df.format(dividendRate));
+        this.dividendRate =Double.parseDouble(df.format(this.dividendRate));
     }   // 소수점 3째자리까지 나오게 반올림하여 숫자로 만들기
 
     public double getDividendRate() {
@@ -36,9 +36,9 @@ public class MainHorse {
         return winRate;
     }
 
-    public double calWinRate(){
-        this.winRate = ((this.getCountVictory()*100.0) * 100.0) / this.getCountRace() / 100.0;
-        return this.winRate;
+    public void calWinRate(){
+        this.winRate = (this.getCountVictory() * 1000.0) * 100.0 / ((this.getCountRace() * 1000.0)) ;
+        this.winRate = Double.parseDouble(ddf.format(winRate));
     }   // 승률
     public int calMove() {                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
         randomSpeed();
