@@ -9,5 +9,4 @@ public class Horse9 extends MainHorse{
         super(nam);
     }                   // 말의 이름을 매개변수로 받는 생성자
 
-
 }

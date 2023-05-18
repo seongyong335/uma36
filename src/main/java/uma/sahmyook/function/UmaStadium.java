@@ -12,7 +12,7 @@ public class UmaStadium {
     private int tmpTurn = 0;
     public UmaStadium() {
         //출전 말 등록
-        horses.add(new Horse1("🚗"));
+        horses.add(new HorseSeongmin1("🚗"));
         horses.add(new Horse2("🛴"));
         horses.add(new Horse3("✈"));
         horses.add(new Horse4("🚲"));
