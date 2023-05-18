@@ -19,7 +19,7 @@ public class HorseSelect {
     }
     public void horsePickSelect() {
         MainMenu.horseNum = Integer.parseInt(MainMenu.horseStr);
-        System.out.println("'" + MainMenu.horseNum + "'" + " 번마 " + us.getHorses().get(MainMenu.horseNum).getUmaName() +"를 선택하셨습니다!");
+        System.out.println("'" + MainMenu.horseNum + "'" + " 번마 " + us.getHorses().get(MainMenu.horseNum-1).getUmaName() +"를 선택하셨습니다!");
         System.out.print("게임을 시작해주세요!");
         try {
             sleep(2000);
@@ -27,7 +27,4 @@ public class HorseSelect {
             throw new RuntimeException(e);
         }
     }
-
-
-
 }
