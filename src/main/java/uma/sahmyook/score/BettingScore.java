@@ -18,10 +18,7 @@ public class BettingScore {
         }
         else {
             System.out.print(us.getHorses().get(MainMenu.horseNum-1).getUmaName()+"이(가) 제패에 실패했습니다. ");
-
         }
-
-
     }
 
 

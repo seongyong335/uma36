@@ -1,6 +1,7 @@
 package uma.sahmyook.menu;
 
 import static java.lang.Thread.sleep;
+import static uma.sahmyook.menu.MainMenu.us;
 
 public class HorseSelect {
     public void method() {
@@ -18,8 +19,8 @@ public class HorseSelect {
     }
     public void horsePickSelect() {
         MainMenu.horseNum = Integer.parseInt(MainMenu.horseStr);
-        System.out.println("'" + MainMenu.horseNum + "'" + " 번 마를 선택하셨습니다!");
-        System.out.println("게임을 시작해주세요!");
+        System.out.println("'" + MainMenu.horseNum + "'" + " 번마 " + us.getHorses().get(MainMenu.horseNum).getUmaName() +"를 선택하셨습니다!");
+        System.out.print("게임을 시작해주세요!");
         try {
             sleep(2000);
         } catch (InterruptedException e) {

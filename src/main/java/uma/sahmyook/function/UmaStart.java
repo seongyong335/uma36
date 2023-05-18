@@ -5,6 +5,7 @@ import uma.sahmyook.menu.MainMenu;
 import uma.sahmyook.score.BettingScore;
 import uma.sahmyook.score.Round;
 
+import static java.lang.Thread.sleep;
 import static uma.sahmyook.menu.MainMenu.us;
 
 public class UmaStart {
@@ -12,9 +13,17 @@ public class UmaStart {
     BettingScore bs = new BettingScore();
 
     public void umaStart() {
-        if ((0 < MainMenu.ticket && MainMenu.ticket < 11) && MainMenu.horseNum == 0){
-            System.out.println("응원 말을 선택해주세요");
-        return; }
+
+        if (0 >= MainMenu.ticket || MainMenu.ticket <= 11 && MainMenu.horseNum == 0){
+            System.out.println("\n\n\n\n\n\n\n\n응원 말을 선택하시지 않으셨습니다!");
+            System.out.print("응원하는 말을 선택해주세요~~");
+            try {
+                sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            return; }
+
             /* 경기 생성 및 시작 */
         UmaThread a = new UmaThread(0);
         UmaThread b = new UmaThread(1);
@@ -55,5 +64,8 @@ public class UmaStart {
         us.checkRank();
         bs.bettingResult();
         Round.roundReset();
+        System.out.print("Enter를 눌러주세요...");
+        MainMenu.sc.nextLine();
+        System.out.println("\n");
     }
 }

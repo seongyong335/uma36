@@ -7,8 +7,7 @@ public class Horse7 extends MainHorse{
     }
 
     public Horse7(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
-
-        this.setUmaName(nam);
+        super(nam);
     }
 
     @Override

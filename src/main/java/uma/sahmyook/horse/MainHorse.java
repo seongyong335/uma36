@@ -23,6 +23,8 @@ public class MainHorse {
 
     private double winRate = 0.0;
 
+    public MainHorse() {}
+
     public void calDividend() {
         this.dividendRate = ((this.getCountRace() * 1000.0) / (this.getCountTop3()* 0.5 + this.getCountVictory() * 0.2 + 1)) / 1000.0;
         this.dividendRate =Double.parseDouble(df.format(this.dividendRate));
@@ -64,11 +66,6 @@ public class MainHorse {
         setStamina(getStamina() - 10);
 
     }
-
-    public void setUmaName(String umaName) {
-        this.umaName = umaName;
-    }
-
     public void setStatistics(int countRace, int countTop3, int countVictory) {
         this.countRace = countRace;
         this.countTop3 = countTop3;
@@ -172,8 +169,6 @@ public class MainHorse {
             return Integer.toString(this.getRank()) + "/9";
         } else return Integer.toString(this.getDistance()) + "/30";
     }
-
-    public MainHorse(){}
 
     public MainHorse(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
         this.umaName = nam;
