@@ -55,48 +55,158 @@ public class UmaStadium {
         for(int i = 1; i <= umaCount; i++){                                                            //경주마 수만큼 결과 출력
             if(i == horses.get(0).getRank()){                                                                 //경주마 등수 높은 순으로 출력
                 System.out.println(horses.get(0).getUmaName() + "가 " + horses.get(0).getRank() + "등을 차지했습니다!");
+                switch (i){
+                    case 1: horses.get(i).plusCountVictory(); horses.get(i).plusCountTop3(); break;
+                    case 2: horses.get(i).plusCountSecond(); horses.get(i).plusCountTop3(); break;
+                    case 3: horses.get(i).plusCountThird(); horses.get(i).plusCountTop3(); break;
+                    case 4: horses.get(i).plusCountFourth(); break;
+                    case 5: horses.get(i).plusCountFifth(); break;
+                    case 6: horses.get(i).plusCountSixth(); break;
+                    case 7: horses.get(i).plusCountSeventh(); break;
+                    case 8: horses.get(i).plusCountEighth(); break;
+                    case 9: horses.get(i).plusCountNinth(); break;
+                }
+                horses.get(i).plusCountRace();
+                horses.get(i).calDividend();
+                horses.get(i).calWinRate();
             } else if(i == horses.get(1).getRank()){
                 System.out.println(horses.get(1).getUmaName() + "가 " + horses.get(1).getRank() + "등을 차지했습니다!");
+                switch (i){
+                    case 1: horses.get(i).plusCountVictory(); horses.get(i).plusCountTop3(); break;
+                    case 2: horses.get(i).plusCountSecond(); horses.get(i).plusCountTop3(); break;
+                    case 3: horses.get(i).plusCountThird(); horses.get(i).plusCountTop3(); break;
+                    case 4: horses.get(i).plusCountFourth(); break;
+                    case 5: horses.get(i).plusCountFifth(); break;
+                    case 6: horses.get(i).plusCountSixth(); break;
+                    case 7: horses.get(i).plusCountSeventh(); break;
+                    case 8: horses.get(i).plusCountEighth(); break;
+                    case 9: horses.get(i).plusCountNinth(); break;
+                }
+                horses.get(i).plusCountRace();
+                horses.get(i).calDividend();
+                horses.get(i).calWinRate();
             }
             else if(i == horses.get(2).getRank()){
                 System.out.println(horses.get(2).getUmaName() + "가 " + horses.get(2).getRank() + "등을 차지했습니다!");
+                switch (i){
+                    case 1: horses.get(i).plusCountVictory(); horses.get(i).plusCountTop3(); break;
+                    case 2: horses.get(i).plusCountSecond(); horses.get(i).plusCountTop3(); break;
+                    case 3: horses.get(i).plusCountThird(); horses.get(i).plusCountTop3(); break;
+                    case 4: horses.get(i).plusCountFourth(); break;
+                    case 5: horses.get(i).plusCountFifth(); break;
+                    case 6: horses.get(i).plusCountSixth(); break;
+                    case 7: horses.get(i).plusCountSeventh(); break;
+                    case 8: horses.get(i).plusCountEighth(); break;
+                    case 9: horses.get(i).plusCountNinth(); break;
+                }
+                horses.get(i).plusCountRace();
+                horses.get(i).calDividend();
+                horses.get(i).calWinRate();
             }
             else if(i == horses.get(3).getRank()){
                 System.out.println(horses.get(3).getUmaName() + "가 " + horses.get(3).getRank() + "등을 차지했습니다!");
+                switch (i){
+                    case 1: horses.get(i).plusCountVictory(); horses.get(i).plusCountTop3(); break;
+                    case 2: horses.get(i).plusCountSecond(); horses.get(i).plusCountTop3(); break;
+                    case 3: horses.get(i).plusCountThird(); horses.get(i).plusCountTop3(); break;
+                    case 4: horses.get(i).plusCountFourth(); break;
+                    case 5: horses.get(i).plusCountFifth(); break;
+                    case 6: horses.get(i).plusCountSixth(); break;
+                    case 7: horses.get(i).plusCountSeventh(); break;
+                    case 8: horses.get(i).plusCountEighth(); break;
+                    case 9: horses.get(i).plusCountNinth(); break;
+                }
+                horses.get(i).plusCountRace();
+                horses.get(i).calDividend();
+                horses.get(i).calWinRate();
             }
             else if(i == horses.get(4).getRank()){
                 System.out.println(horses.get(4).getUmaName() + "가 " + horses.get(4).getRank() + "등을 차지했습니다!");
+                switch (i){
+                    case 1: horses.get(i).plusCountVictory(); horses.get(i).plusCountTop3(); break;
+                    case 2: horses.get(i).plusCountSecond(); horses.get(i).plusCountTop3(); break;
+                    case 3: horses.get(i).plusCountThird(); horses.get(i).plusCountTop3(); break;
+                    case 4: horses.get(i).plusCountFourth(); break;
+                    case 5: horses.get(i).plusCountFifth(); break;
+                    case 6: horses.get(i).plusCountSixth(); break;
+                    case 7: horses.get(i).plusCountSeventh(); break;
+                    case 8: horses.get(i).plusCountEighth(); break;
+                    case 9: horses.get(i).plusCountNinth(); break;
+                }
+                horses.get(i).plusCountRace();
+                horses.get(i).calDividend();
+                horses.get(i).calWinRate();
             }
             else if(i == horses.get(5).getRank()){
                 System.out.println(horses.get(5).getUmaName() + "가 " + horses.get(5).getRank() + "등을 차지했습니다!");
+                switch (i){
+                    case 1: horses.get(i).plusCountVictory(); horses.get(i).plusCountTop3(); break;
+                    case 2: horses.get(i).plusCountSecond(); horses.get(i).plusCountTop3(); break;
+                    case 3: horses.get(i).plusCountThird(); horses.get(i).plusCountTop3(); break;
+                    case 4: horses.get(i).plusCountFourth(); break;
+                    case 5: horses.get(i).plusCountFifth(); break;
+                    case 6: horses.get(i).plusCountSixth(); break;
+                    case 7: horses.get(i).plusCountSeventh(); break;
+                    case 8: horses.get(i).plusCountEighth(); break;
+                    case 9: horses.get(i).plusCountNinth(); break;
+                }
+                horses.get(i).plusCountRace();
+                horses.get(i).calDividend();
+                horses.get(i).calWinRate();
             }
             else if(i == horses.get(6).getRank()){
                 System.out.println(horses.get(6).getUmaName() + "가 " + horses.get(6).getRank() + "등을 차지했습니다!");
+                switch (i){
+                    case 1: horses.get(i).plusCountVictory(); horses.get(i).plusCountTop3(); break;
+                    case 2: horses.get(i).plusCountSecond(); horses.get(i).plusCountTop3(); break;
+                    case 3: horses.get(i).plusCountThird(); horses.get(i).plusCountTop3(); break;
+                    case 4: horses.get(i).plusCountFourth(); break;
+                    case 5: horses.get(i).plusCountFifth(); break;
+                    case 6: horses.get(i).plusCountSixth(); break;
+                    case 7: horses.get(i).plusCountSeventh(); break;
+                    case 8: horses.get(i).plusCountEighth(); break;
+                    case 9: horses.get(i).plusCountNinth(); break;
+                }
+                horses.get(i).plusCountRace();
+                horses.get(i).calDividend();
+                horses.get(i).calWinRate();
             }
             else if(i == horses.get(7).getRank()){
                 System.out.println(horses.get(7).getUmaName() + "가 " + horses.get(7).getRank() + "등을 차지했습니다!");
+                switch (i){
+                    case 1: horses.get(i).plusCountVictory(); horses.get(i).plusCountTop3(); break;
+                    case 2: horses.get(i).plusCountSecond(); horses.get(i).plusCountTop3(); break;
+                    case 3: horses.get(i).plusCountThird(); horses.get(i).plusCountTop3(); break;
+                    case 4: horses.get(i).plusCountFourth(); break;
+                    case 5: horses.get(i).plusCountFifth(); break;
+                    case 6: horses.get(i).plusCountSixth(); break;
+                    case 7: horses.get(i).plusCountSeventh(); break;
+                    case 8: horses.get(i).plusCountEighth(); break;
+                    case 9: horses.get(i).plusCountNinth(); break;
+                }
+                horses.get(i).plusCountRace();
+                horses.get(i).calDividend();
+                horses.get(i).calWinRate();
             }
             else if(i == horses.get(8).getRank()){
                 System.out.println(horses.get(8).getUmaName() + "가 " + horses.get(8).getRank() + "등을 차지했습니다!");
+                switch (i){
+                    case 1: horses.get(i).plusCountVictory(); horses.get(i).plusCountTop3(); break;
+                    case 2: horses.get(i).plusCountSecond(); horses.get(i).plusCountTop3(); break;
+                    case 3: horses.get(i).plusCountThird(); horses.get(i).plusCountTop3(); break;
+                    case 4: horses.get(i).plusCountFourth(); break;
+                    case 5: horses.get(i).plusCountFifth(); break;
+                    case 6: horses.get(i).plusCountSixth(); break;
+                    case 7: horses.get(i).plusCountSeventh(); break;
+                    case 8: horses.get(i).plusCountEighth(); break;
+                    case 9: horses.get(i).plusCountNinth(); break;
+                }
+                horses.get(i).plusCountRace();
+                horses.get(i).calDividend();
+                horses.get(i).calWinRate();
             }
         }
-        for(int i = 0; i < 9; i++){
-            if(horses.get(i).getRank() == 1){
-                horses.get(i).plusCountVictory();
-                horses.get(i).plusCountTop3();
-            }
-            if(horses.get(i).getRank() == 2 || horses.get(i).getRank() == 3){
-                horses.get(i).plusCountTop3();
-            }
-            horses.get(i).plusCountRace();
-            horses.get(i).calDividend();
-            horses.get(i).calWinRate();
-        }
-
-
     }
-
-
     public boolean isRaceStatus() {
         return raceStatus;
     }

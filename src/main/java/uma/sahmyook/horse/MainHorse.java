@@ -9,6 +9,12 @@ public class MainHorse {
     private int countTop3;                    // 탑3에 들어간 횟수를 저장하는 변수
     private int countSecond;
     private int countThird;
+    private int countFourth;
+    private int countFifth;
+    private int countSixth;
+    private int countSeventh;
+    private int countEighth;
+    private int countNinth;
     private int stamina = 100;                // 말의 스테미너를 저장하는 변수
     private String umaName;                   // 말의 이름을 저장하는 변수
     private double dividendRate = 0.0 ;      // 배당률을 저장하는 변수
@@ -89,6 +95,31 @@ public class MainHorse {
     public void plusCountTop3(){
         this.countTop3++;
     }           // 경기수를 1 증가하는 메소드
+    public void plusCountSecond(){
+        this.countSecond++;
+    }
+    public void plusCountThird(){
+        this.countThird++;
+    }
+    public void plusCountFourth(){
+        this.countFourth++;
+    }
+    public void plusCountFifth(){
+        this.countFifth++;
+    }
+    public void plusCountSixth(){
+        this.countSixth++;
+    }
+    public void plusCountSeventh(){
+        this.countSeventh++;
+    }
+    public void plusCountEighth(){
+        this.countEighth++;
+    }
+    public void plusCountNinth(){
+        this.countNinth++;
+    }
+
 
     public int getCountRace() {             //경기수를 리턴받는 메소드
         return countRace;
@@ -101,6 +132,30 @@ public class MainHorse {
     public int getCountTop3() {             //top3에 들어간 경기수를 리턴받는 메소드
         return countTop3;
     }             // Top3횟수를 리턴 받는 메소드
+
+    public int getCountFourth() {
+        return countFourth;
+    }
+
+    public int getCountFifth() {
+        return countFifth;
+    }
+
+    public int getCountSixth() {
+        return countSixth;
+    }
+
+    public int getCountSeventh() {
+        return countSeventh;
+    }
+
+    public int getCountEighth() {
+        return countEighth;
+    }
+
+    public int getCountNinth() {
+        return countNinth;
+    }
 
     public int getSpeed() {
         return this.speed;
