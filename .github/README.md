@@ -45,7 +45,7 @@
  
        
   <h2>🎥경마게임 구현 영상</h2>
-   [![Video Label](http://img.youtube.com/vi/ta2OHiD8VfA/0.jpg)](https://youtu.be/ta2OHiD8VfA)
+   [![UMA-UMA36](http://img.youtube.com/vi/ta2OHiD8VfA/0.jpg)](https://youtu.be/ta2OHiD8VfA?t=0s)
   <h2>❓How to play </h2>
    <ol>
   <li>Uma36을 시작하면 메인화면이 출력됩니다.</li>
