@@ -3,69 +3,67 @@ package uma.sahmyook.horse;
 import java.text.DecimalFormat;
 
 public class MainHorse {
+    private int speed;                        // 리턴받을 랜덤한 속도값
+    private int countRace;                    // 경기수를 저장하는 변수
+    private int countVictory;                 // 우승횟수를 저장하는 변수
+    private int countTop3;                    // 탑3에 들어간 횟수를 저장하는 변수
+    private int stamina = 100;                // 말의 스테미너를 저장하는 변수
+    private String umaName;                   // 말의 이름을 저장하는 변수
+    private double dividendRate = 0.0 ;      // 배당률을 저장하는 변수
+    public DecimalFormat df = new DecimalFormat("#.###");   // 소수점 세자리까지 나타내는 포멧
+    public DecimalFormat ddf = new DecimalFormat("#.#");    // 소수점 첫째자리까지 나타내는 포멧
 
-    private double dividend;
+    private double winRate = 0.0;                                 // 1등할 확률을 저장하는 변수
 
+    public MainHorse() {}                                        // 기본생성자
 
-    private int speed;                               // 리턴받을 랜덤한 속도값, 리턴받아서 쓸꺼라 protected 접근자 사용
-    private int countRace;                    // 경기수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
-    private int countVictory;                 // 우승횟수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
-    private int countTop3;                    // 탑3에 들어간 횟수를 저장하는 변수, 각 객체마다 저장하면 굳이 static으로 변수를 가질 필요는 없는거 같음
+    public MainHorse(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
+        this.umaName = nam;
+    }         // 말 이름을 매개변수로 받는 생성자
 
-
-    private int stamina = 100;                       // 말의 스테미너를 저장하는 변수
-    private String umaName;
-
-    private double dividendRate = 0.0 ;
-
-    public DecimalFormat df = new DecimalFormat("#.###");
-    public DecimalFormat ddf = new DecimalFormat("#.#");
-
-    private double winRate = 0.0;
-
-    public MainHorse() {}
-
+    // 배당률을 구하는 메소드
     public void calDividend() {
         this.dividendRate = ((this.getCountRace() * 1000.0) / (this.getCountTop3()* 0.5 + this.getCountVictory() * 0.2 + 1)) / 1000.0;
         this.dividendRate =Double.parseDouble(df.format(this.dividendRate));
-    }   // 소수점 3째자리까지 나오게 반올림하여 숫자로 만들기
+    }
 
     public double getDividendRate() {
         return dividendRate;
-    }
+    }   // 배당률을 리턴받는 메소드
 
     public double getWinRate() {
         return winRate;
-    }
+    }             // 승률을 리턴받는 메소드
 
+    // 승률을 구하는 메소드
     public void calWinRate(){
         this.winRate = (this.getCountVictory() * 1000.0) * 100.0 / ((this.getCountRace() * 1000.0)) ;
         this.winRate = Double.parseDouble(ddf.format(winRate));
-    }   // 승률
-    public int calMove() {                                   // 실행하는 클래스에서 인스턴스 생성하고 run() 메소드가 실행하면됨
-        randomSpeed();
-        useStamina();                                   // 달린후 스태미너를 사용합니다.
+    }
 
-        if (stamina < 50) {                                 //스테미너가 50미만으로 떨어지면 스피드가 반으로 줄어든다.
-            this.speed = getSpeed() / 2;                           //인터페이스로 스테미너 다시 100으로 돌려도되는데 그냥 여기값에서 다시 조정해서 해도됨
+
+    public int calMove() {                                      // 내부 메소드를 수행한 후 속도를 리턴 받는 메소드
+        randomSpeed();
+        useStamina();
+
+        if (stamina < 50) {
+            this.speed = getSpeed() / 2;
         }
 
-        //스피드 오버라이드해서 리턴받을 speed 조작할 수 있음
         return this.speed;
     }
 
-    //말의 속도를 랜덤값으로 받는 함수 ( 아직 미완성 )
-    public void randomSpeed() {                              //랜덤으로 스피드 설정
 
+    public void randomSpeed() {                             // 말의 속도를 랜덤으로 대입하는 메소드
         this.speed = (int) ((Math.random() * 8) + 1) * (int) ((Math.random() * 8) + 1);
     }
 
-    //말이 한번 달릴때 스테미너 10을 사용하는 함수 ( 아직 미완성 )
-    public void useStamina() {
 
+    public void useStamina() {                          //말이 한번 달릴때 스테미너 10을 사용하는 메소드
         setStamina(getStamina() - 10);
-
     }
+
+    // 초기 말의 경기정보를 세팅하는 메소드
     public void setStatistics(int countRace, int countTop3, int countVictory) {
         this.countRace = countRace;
         this.countTop3 = countTop3;
@@ -75,58 +73,41 @@ public class MainHorse {
 
     public void plusCountRace(){
         this.countRace++;
-    }
+    }           // 경기수를 1 증가하는 메소드
     public void plusCountVictory(){
         this.countVictory++;
-    }
+    }     // 우승횟수를 1 증가하는 메소드
     public void plusCountTop3(){
         this.countTop3++;
-    }
-    public void setHorseInfo(int countRace,int countVictory,int countTop3){
-        this.countRace = countRace;
-        this.countVictory = countVictory;
-        this.countTop3 = countTop3;
-    }
-
+    }           // 경기수를 1 증가하는 메소드
 
     public int getCountRace() {             //경기수를 리턴받는 메소드
         return countRace;
-    }
+    }             // 경기수를 리턴받는 메소드
 
     public int getCountVictory() {          //승리한 경기수를 리턴받는 메소드
         return countVictory;
-    }
+    }       // 우승횟수를 리턴받는 메소드
 
     public int getCountTop3() {             //top3에 들어간 경기수를 리턴받는 메소드
         return countTop3;
-    }
+    }             // Top3횟수를 리턴 받는 메소드
 
     public int getSpeed() {
         return this.speed;
-    }
+    }               // 스피드를 리턴받는 메소드
 
     public void setSpeed(int speed) {
         this.speed = speed;
-    }
+    }   // 스피드를 세팅하는 메소드
 
     public int getStamina() {
         return this.stamina;
-    }
+    }           // 스테미너를 리턴받는 메소드
 
-    public double getDividend() {
-        return dividend;
-    }
-
-    public void setDividend(double dividend) {
-        this.dividend = dividend;
-    }
-
-
-    public int setStamina(int stamina) {
+    public void setStamina(int stamina) {                       // 매개변수로 받은 정수를 스테미너값에 대입하는 메소드(확인필요)
         this.stamina = stamina;
-        return this.stamina;
     }
-
 
     /* ----------------------------------경기 필요 필드, 메소드------------------------------------ */
     /* UmaRace 필드 */
@@ -170,10 +151,6 @@ public class MainHorse {
         } else return Integer.toString(this.getDistance()) + "/30";
     }
 
-    public MainHorse(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
-        this.umaName = nam;
-    }
-
     public void setRaceSpace() {
         this.raceSpace.append(' ');
     }
@@ -188,11 +165,11 @@ public class MainHorse {
 
     public int getDistance() {                      //get 남은거리
         return distance;
-    }
+    }                            // 경기장 길이를 리턴받는 메소드
 
     public void setDistance(int distance) {        //set 남은거리
         this.distance = distance;
-    }
+    }     // 경기장 길이를 세팅하는 메소드
 
     public boolean isFinish() {                   //get 경기 상태
         return finish;
@@ -204,15 +181,15 @@ public class MainHorse {
 
     public int getRank() {                      //get 등수
         return rank;
-    }
+    }                                   // 등수를 리턴받는 메소드
 
     public void setRank(int rank) {             //set 등수
         this.rank = rank;
-    }
+    }                     // 등수를 세팅하는 메소드
 
     public String getUmaName() {
         return umaName;
-    }
+    }                         // 말 이름을 리턴받는 메소드
 
     }
 
