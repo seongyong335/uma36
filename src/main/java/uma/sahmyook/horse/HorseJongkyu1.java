@@ -19,7 +19,7 @@ public class HorseJongkyu1 extends MainHorse implements HorseInterface1 {
     @Override
     public void useStamina(){                                   // 스테미너가 50이하가 되면 다시 100으로 돌리는 메소드를 실행하는 메소드
         setStamina(getStamina()-10);
-        if(getStamina()<=50) resetStamina();
+        if(getStamina()<=35) resetStamina();
     }
     @Override
     public int calMove(){                        // 속도를 리턴받는 메소드
