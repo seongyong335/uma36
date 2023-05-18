@@ -1,13 +1,13 @@
 package uma.sahmyook.horse;
 
-public class Horse1 extends MainHorse implements HorseInterface1 {
+public class HorseJongkyu1 extends MainHorse implements HorseInterface1 {
 
     /* super클래스에서는 스테미너가 50미만이면 속도가 반으로 감소하지만 Horse1은 스테미너로 인한
     * 속도 감소 없음 */
 
-    public Horse1(){}                                           // 기본생성자
+    public HorseJongkyu1(){}                                           // 기본생성자
 
-    public Horse1(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
+    public HorseJongkyu1(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
         super(nam);
     }                   // 말이 이름을 매개변수로 받는 생성자
 
