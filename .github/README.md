@@ -31,7 +31,7 @@
 </div>  
 <br>
   <div align="center">
-    <a href="https://www.notion.so/UMA36-Milestone-4dfb98abd5c64d63b732d0c0720f4e09?pvs=4"><img src="https://img.shields.io/badge/마일스톤-FAD0C9?style=for-the-badge&logo=notion&logoColor=000000" /></a>
+    <a href="https://sky-objective-d96.notion.site/UMA36-Milestone-07fff5c249c54ed1a0ed211fa3b2aea0"><img src="https://img.shields.io/badge/마일스톤-FAD0C9?style=for-the-badge&logo=notion&logoColor=000000" /></a>
   </div>  
   <h2>🪪프로젝트 소개</h2>
   
