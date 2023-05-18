@@ -13,21 +13,21 @@ public class TokkiTee extends MainHorse implements HorseInterface1 {
 
     @Override
     public void resetStamina() {                                // 스테미너 값을 100으로 설정하는 메소드
-         setStamina(200);
+         setStamina(130);
     }
 
     @Override
     public void useStamina(){                                   // 스테미너가 50이하가 되면 다시 100으로 돌리는 메소드를 실행하는 메소드
         setStamina(getStamina()-10);
-        if(getStamina()<=50) resetStamina();
+        if(getStamina()<=100) resetStamina();
     }
     @Override
     public int calMove(){                        // 속도를 리턴받는 메소드
         randomSpeed();
         useStamina();
 
-        if(getStamina()<=150){    //스태미너가 150 이하로 떨어지면 스피드 감소
-            setSpeed(getSpeed()/3);
+        if(getStamina()<=70){    //스태미너가 100 이하로 떨어지면 스피드 감소
+            setSpeed(getSpeed()*2);
         }
 
         return getSpeed();

@@ -66,7 +66,7 @@ public class UmaStart {
         bs.bettingResult();
         Round.roundReset();
         System.out.print("Enter를 눌러주세요...");
-//        MainMenu.sc.nextLine();
+       MainMenu.sc.nextLine();
         System.out.println("\n");
     }
 }

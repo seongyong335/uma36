@@ -1,6 +1,6 @@
 package uma.sahmyook.horse;
 
-public class NiceNature extends MainHorse{
+public class NiceNature extends MainHorse {
     private int nn = 0;
     public NiceNature() {
     }
@@ -21,12 +21,12 @@ public class NiceNature extends MainHorse{
     @Override
     public void randomSpeed() {                              //랜덤으로 스피드 설정
 
-        nn = ((int) ((Math.random() * 11) + 3) % 3) ;
+        nn = ((int) ((Math.random() * 10) + 3) % 3) ;
         switch (nn){
-            case 1 : this.setSpeed(1+2); break;
-            case 2 : this.setSpeed(1+2+3); break;
-            case 3 : this.setSpeed(1+2+3+3); break;
-            default: this.setSpeed(1+2);
+            case 1 : this.setSpeed(3+3+1); break;
+            case 2 : this.setSpeed(3+3+2); break;
+            case 3 : this.setSpeed(3+3+3); break;
+            default: this.setSpeed(3+2+1);
         }
 
     }
