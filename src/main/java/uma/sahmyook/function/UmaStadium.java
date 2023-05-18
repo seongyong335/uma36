@@ -1,5 +1,4 @@
 package uma.sahmyook.function;
-
 import uma.sahmyook.horse.*;
 
 import java.util.ArrayList;
@@ -12,15 +11,15 @@ public class UmaStadium {
     private int tmpTurn = 0;
     public UmaStadium() {
         //출전 말 등록
-        horses.add(new HorseSeongmin1("🚗"));
-        horses.add(new HorseSeongmin2("🛴"));
-        horses.add(new HorseJongkyu1("✈"));
-        horses.add(new HorseJongkyu2("🚲"));
-        horses.add(new PineHouse("🚑"));
-        horses.add(new GoldShip("f"));
-        horses.add(new TokkiTee("g"));
-        horses.add(new RabbitPrincess4("h"));
-        horses.add(new NiceNature("i"));
+        horses.add(new HorseSeongmin1("S1"));
+        horses.add(new HorseSeongmin2("S2"));
+        horses.add(new HorseJongkyu1("J1"));
+        horses.add(new HorseJongkyu2("J2"));
+        horses.add(new PineHouse("PH"));
+        horses.add(new GoldShip("GS"));
+        horses.add(new TokkiTee("TT"));
+        horses.add(new RabbitPrincess4("RP"));
+        horses.add(new NiceNature("NN"));
 
         for(int i = 0 ; i< 9; i++) {
             //horses.get(i).setHorseInfo(130, 48, 40);

@@ -1,6 +1,6 @@
 package uma.sahmyook.horse;
 
-public class NiceNature extends MainHorse{
+public class NiceNature extends MainHorse {
     private int nn = 0;
     public NiceNature() {
     }

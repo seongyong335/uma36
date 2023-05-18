@@ -1,6 +1,6 @@
 package uma.sahmyook.horse;
 
-public class RabbitPrincess4 extends MainHorse implements HorseInterface2{
+public class RabbitPrincess4 extends MainHorse implements HorseInterface2 {
 //처음에 스태피너 써서 속도 증가
 
     public RabbitPrincess4() {                                       // 기본생성자
@@ -24,7 +24,7 @@ public class RabbitPrincess4 extends MainHorse implements HorseInterface2{
         useStamina();
 
         if(getStamina() <= 10){
-            setSpeed(getSpeed()/7);
+            setSpeed(getSpeed()/3);
         }
 
         return getSpeed();

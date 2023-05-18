@@ -1,6 +1,6 @@
 package uma.sahmyook.horse;
 
-public class HorseJongkyu2 extends MainHorse implements HorseInterface2{
+public class HorseJongkyu2 extends MainHorse implements HorseInterface2 {
 //처음에 스태피너 써서 속도 증가
 
     public HorseJongkyu2() {                                       // 기본생성자

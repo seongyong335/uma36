@@ -1,5 +1,6 @@
 package uma.sahmyook;
 
+
 import uma.sahmyook.menu.MainMenu;
 
 public class Application {

@@ -1,7 +1,6 @@
 package uma.sahmyook.score;
-import uma.sahmyook.menu.MainMenu;
 
-import java.util.Scanner;
+import uma.sahmyook.menu.MainMenu;
 
 import static java.lang.Thread.sleep;
 

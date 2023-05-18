@@ -1,9 +1,9 @@
 package uma.sahmyook.function;
 
-
 import uma.sahmyook.horse.MainHorse;
 
 import static uma.sahmyook.menu.MainMenu.us;
+
 
 public class UmaRace {
 

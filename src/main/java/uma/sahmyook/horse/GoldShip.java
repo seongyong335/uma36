@@ -1,6 +1,6 @@
 package uma.sahmyook.horse;
 
-public class GoldShip extends MainHorse{
+public class GoldShip extends MainHorse {
 
     public GoldShip(){}
     public GoldShip(String nam) {
