@@ -30,7 +30,18 @@ public class Ticket {
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
-                } else if (MainMenu.ticket + no >= 10) {  /* 스코어가 10000이상 일 때 티켓을 10장 구매 시 */
+                } else if (MainMenu.ticket + no >= 0 && MainMenu.ticket + no <= 10) { /*정상 구매 */
+                    MainMenu.score -= (no * 1000);
+                    MainMenu.ticket += no;
+                    System.out.println("남은 스코어 :" + MainMenu.score + "  \\ " + "보유 티켓 수 : " + MainMenu.ticket);
+                    try {
+                        sleep(2000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    break;
+                }
+                else if (MainMenu.ticket + no >= 10) {  /* 스코어가 10000이상 일 때 티켓을 10장 구매 시 */
                     System.out.println("티켓은 최대 10개 보유 할 수 있습니다.");
                     System.out.println("다시 구입해 주세요!");
                     try {
@@ -48,17 +59,7 @@ public class Ticket {
                         throw new RuntimeException(e);
                     }
 
-                } else if (MainMenu.ticket + no >= 0 && MainMenu.ticket + no <= 10) { /*정상 구매 */
-                    MainMenu.score -= (no * 1000);
-                    MainMenu.ticket += no;
-                    System.out.println("남은 스코어 :" + MainMenu.score + "  \\ " + "보유 티켓 수 : " + MainMenu.ticket);
-                    try {
-                        sleep(2000);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                    break;
-                } else { /*오입력할 경우 출력*/
+                }  else { /*오입력할 경우 출력*/
                     System.out.print("잘못 입력하셨습니다. 다시 입력해 주세요. \n\n\n\n");
                 }
             }

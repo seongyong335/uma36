@@ -1,19 +1,19 @@
 package uma.sahmyook.horse;
 
-public class Horse1 extends MainHorse implements HorseInterface1 {
+public class TokkiTee extends MainHorse implements HorseInterface1 {
 
     /* super클래스에서는 스테미너가 50미만이면 속도가 반으로 감소하지만 Horse1은 스테미너로 인한
     * 속도 감소 없음 */
 
-    public Horse1(){}                                           // 기본생성자
+    public TokkiTee(){}                                           // 기본생성자
 
-    public Horse1(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
+    public TokkiTee(String nam) {             //경주마 생성과 해당 경주마를 대표하는 아이콘 설정
         super(nam);
     }                   // 말이 이름을 매개변수로 받는 생성자
 
     @Override
     public void resetStamina() {                                // 스테미너 값을 100으로 설정하는 메소드
-         setStamina(100);
+         setStamina(200);
     }
 
     @Override
@@ -26,8 +26,8 @@ public class Horse1 extends MainHorse implements HorseInterface1 {
         randomSpeed();
         useStamina();
 
-        if(getStamina()<=50){
-            setSpeed(getSpeed()/2);
+        if(getStamina()<=150){    //스태미너가 150 이하로 떨어지면 스피드 감소
+            setSpeed(getSpeed()/3);
         }
 
         return getSpeed();
