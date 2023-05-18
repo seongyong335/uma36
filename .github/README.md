@@ -10,8 +10,8 @@
   </div>
   <div>
     <a href="https://github.com/asm2005"><img src="https://img.shields.io/badge/안성민-FF9900?style=for-the-badge&logo=github&logoColor=white" /></a>
-    <p>  </p>
-    <p>  </p>
+    <p> S1 말 : 초반 설계 때 승률이 나쁘지 않아 너프를 당하지 않은 운 좋은 말!! 안전빵을 원한다면 나쁘지 않을지도??  </p>
+    <p> S2 말 : 초반 설계 때 승률이 압도적이라 저격 잠수함 너프를 당하고 묻혀버린 비운의 말... 버프좀 해주세요!!! </p>
   </div>
  <div>
   <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a> 
