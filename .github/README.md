@@ -45,7 +45,7 @@
  
        
   <h2>🎥경마게임 구현 영상</h2>
-   [![UMA-UMA36](http://img.youtube.com/vi/ta2OHiD8VfA/0.jpg)](https://youtu.be/ta2OHiD8VfA?t=0s)
+   [![TEAM UMA - UMA36](http://img.youtube.com/vi/ta2OHiD8VfA/0.jpg)](https://youtu.be/ta2OHiD8VfA?t=0s) 
   <h2>❓How to play </h2>
    <ol>
   <li>Uma36을 시작하면 메인화면이 출력됩니다.</li>
@@ -160,10 +160,3 @@
    티켓을 최대 10개까지 구매할 수 있습니다. (입력 필요)
 </code></pre>
 </ol>
-  
- 
-
-
-
-<!-- ... -->
-  [![IU(아이유) _ Into the I-LAND](http://img.youtube.com/vi/QYNwbZHmh8g/0.jpg)](https://youtu.be/QYNwbZHmh8g?t=0s) 
