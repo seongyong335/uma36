@@ -15,7 +15,7 @@ public class UmaRace {
         horse.resetRank();
         horse.resetSpace();
         horse.resetRaceSpace();
-        horse.setDistance(30);              //경기 길이 설정
+        horse.setDistance(50);              //경기 길이 설정
         ran = 1;                            //경기 끝나면 등수 설정용
         horse.setFinish(false);             //경주마의 상태를 경기 상태로 변경
         for(int i = 0; i < horse.getDistance()+10; i++){           //거리만큼 거리 추가

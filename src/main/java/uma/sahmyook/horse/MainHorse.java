@@ -7,6 +7,8 @@ public class MainHorse {
     private int countRace;                    // 경기수를 저장하는 변수
     private int countVictory;                 // 우승횟수를 저장하는 변수
     private int countTop3;                    // 탑3에 들어간 횟수를 저장하는 변수
+    private int countSecond;
+    private int countThird;
     private int stamina = 100;                // 말의 스테미너를 저장하는 변수
     private String umaName;                   // 말의 이름을 저장하는 변수
     private double dividendRate = 0.0 ;      // 배당률을 저장하는 변수
@@ -23,9 +25,9 @@ public class MainHorse {
 
     // 배당률을 구하는 메소드
     public void calDividend() {
-        this.dividendRate = ((this.getCountRace() * 1000.0) / (this.getCountTop3()* 0.5 + this.getCountVictory() * 0.2 + 1)) / 1000.0;
+        this.dividendRate =50 * (((this.getCountRace() * 1000.0) / ((this.getCountThird()* 1 + this.getCountSecond() * 2 + this.getCountVictory() * 4)+1)) / 10000.0);
         this.dividendRate =Double.parseDouble(df.format(this.dividendRate));
-    }
+    }   // 소수점 3째자리까지 나오게 반올림하여 숫자로 만들기
 
     public double getDividendRate() {
         return dividendRate;
@@ -53,6 +55,13 @@ public class MainHorse {
         return this.speed;
     }
 
+    public int getCountSecond() {
+        return countSecond;
+    }
+
+    public int getCountThird() {
+        return countThird;
+    }
 
     public void randomSpeed() {                             // 말의 속도를 랜덤으로 대입하는 메소드
         this.speed = (int) ((Math.random() * 8) + 1) * (int) ((Math.random() * 8) + 1);
@@ -148,7 +157,7 @@ public class MainHorse {
     public String showStatus() {
         if(this.getRank() != 0){
             return Integer.toString(this.getRank()) + "/9";
-        } else return Integer.toString(this.getDistance()) + "/30";
+        } else return Integer.toString(this.getDistance()) + "/50";
     }
 
     public void setRaceSpace() {
