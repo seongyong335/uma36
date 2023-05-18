@@ -25,8 +25,17 @@ public class SubMenu{
             System.out.println("5. 경기장 퇴장");
             System.out.print("메뉴 선택 : ");
             MainMenu.no = MainMenu.sc.nextInt();
+            int cnt = 0;
             switch(MainMenu.no){
-                case 1: umaStart.umaStart(); break; // 경기 시작 메소드;
+                case 1:
+                    while (cnt <=10){
+                        umaStart.umaStart();
+                        cnt++;
+                        System.out.println(cnt);
+                    }
+
+
+                    break; // 경기 시작 메소드;
                 case 2: horseSelect.method(); break; // 응원하는 말 선택하는 메소드;
                 case 3: horseCheck.method(); break; // 경마 승률 및 배당률 확인 하는 메소드;
                 case 4:
