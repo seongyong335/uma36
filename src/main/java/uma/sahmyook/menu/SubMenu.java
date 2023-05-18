@@ -11,14 +11,14 @@ public class SubMenu{
 
 
     public void subMenu(){
-        HorseSelect horseSelect = new HorseSelect();
-        HorseCheck horseCheck = new HorseCheck();
-        UmaStart umaStart = new UmaStart();
-        Ticket ticket = new Ticket();
+        HorseSelect horseSelect = new HorseSelect();        // 말선택하는 클래스 객체 생성
+        HorseCheck horseCheck = new HorseCheck();    // 말의 정보를 확인하는 클래스 객체 생성
+        UmaStart umaStart = new UmaStart();                // 우마게임 시작 클래스 객체 생성
+        Ticket ticket = new Ticket();                              // 티켓 클래스 객체 생성
 
 
         do{
-            System.out.println("================= 경기장에 입장하셨습니다! 원하시는 것을 선택해주세요. =================");
+            System.out.println("============= 경기장에 입장하셨습니다! 원하시는 것을 선택해주세요. =============");
             System.out.println("현재 선택한 말 번호 : " + MainMenu.horseNum);
             System.out.println("티켓 수 : " + MainMenu.ticket + "장");
             System.out.println("현재 스코어 : " + MainMenu.score + "점");
@@ -38,6 +38,6 @@ public class SubMenu{
                 case "5": MainMenu.menuExit.Method(0); break;
                 default:  System.out.println("잘못 입력하셨습니다 다시 입력해주세요!");
             }
-        } while(!MainMenu.no.equals("5")); // 이렇게 하지 않으면 case5에서 return받으면 바로 주 메뉴로 나가짐
+        } while(!MainMenu.no.equals("5"));
     }
 }
