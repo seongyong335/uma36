@@ -13,14 +13,14 @@ public class UmaStadium {
     public UmaStadium() {
         //출전 말 등록
         horses.add(new HorseSeongmin1("🚗"));
-        horses.add(new Horse2("🛴"));
-        horses.add(new Horse3("✈"));
-        horses.add(new Horse4("🚲"));
-        horses.add(new Horse5("🚑"));
-        horses.add(new Horse6("f"));
-        horses.add(new Horse7("g"));
-        horses.add(new Horse8("h"));
-        horses.add(new Horse9("i"));
+        horses.add(new HorseSeongmin2("🛴"));
+        horses.add(new HorseJongkyu1("✈"));
+        horses.add(new HorseJongkyu2("🚲"));
+        horses.add(new PineHouse("🚑"));
+        horses.add(new GoldShip("f"));
+        horses.add(new TokkiTee("g"));
+        horses.add(new RabbitPrincess4("h"));
+        horses.add(new NiceNature("i"));
 
         for(int i = 0 ; i< 9; i++) {
             //horses.get(i).setHorseInfo(130, 48, 40);

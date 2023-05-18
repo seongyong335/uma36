@@ -9,8 +9,8 @@ public class HorseSeongmin1 extends MainHorse {
         super(nam);
     } // 말 이름 받는 생성자
 
-    public int resetStamina() {
-        return setStamina(90);
+    public void resetStamina() {
+        setStamina(90);
     } // 스태미나를 90으로 리셋해주는 메소드
 
     public void randomEvent(){  // (int) (Math.random()*10) 이 2보다 작을때 (20퍼의확률) 스피드 2배로 증가
