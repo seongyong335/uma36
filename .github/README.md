@@ -10,14 +10,14 @@
   </div>
   <div>
     <a href="https://github.com/asm2005"><img src="https://img.shields.io/badge/안성민-FF9900?style=for-the-badge&logo=github&logoColor=white" /></a>
-    <p> 꾸준히 안정적인 순위를 자랑하는 HorseJongkyu1 말!! 혹시 속도가 잘 뜬다면 1등...가능할지도...?!?!?! </p>
-    <p> 출발부스터를 사용해 치고 나가고 싶다면 HorseJongkyu2 말을 선택하세요! </p>
+    <p>  </p>
+    <p>  </p>
   </div>
  <div>
   <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a> 
-   <p> HorseJongkyu1 클래스 -> Super클래스(부모클래스)인 MainHorse클래스를 상속 받았는데 부모클래스에서는 말이 이동할 때 마다 스테미너가 줄고 일정 스테미너값에 도달하면 말의 speed가 반으로 줄어들지만 인터페이스를 통해 스테미너가 일정수준에 도달하면 다시 초기값으로 세팅되어 속도가 줄지 않는 말을 만들었습니다. </p>
+   <p>      꾸준히 안정적인 순위를 자랑하는 HorseJongkyu1 말!! 혹시 속도가 잘 뜬다면 1등...가능할지도...?!?!?!      </p>
    
-   <p> HorseJongkyu2 클래스 -> Super클래스(부모클래스)인 MainHorse클래스를 상속받았는데 인터페이스를 통해 booster()메소드를 사용하고 말의 속도를 계산해 리턴받는 calMove() 메소드를 오버라이딩하여 경마가 시작하면 바로 스테미너를 10깎고 부스터 메소드를 통해 속도에서 10 곱한 후 +2 늘려서 출발하는 말을 만들었습니다. </p>
+   <p>  출발부스터를 사용해 치고 나가고 싶다면 HorseJongkyu2 말을 선택하세요! </p>
 </div>
 <a href="https://github.com/kmc6381"><img src="https://img.shields.io/badge/강민철-0000FF?style=for-the-badge&logo=github&logoColor=white" /></a>
   <p>저의 애마인 PineHouse의 능력치를 소개하겠습니다. PH는 부스터라는 스킬을 가지고있습니다. 스테미너에 따라 부스터 효과로 속도가 증가하는 능력을 가지고있습니다.</p>
