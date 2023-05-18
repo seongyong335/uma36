@@ -20,7 +20,7 @@
    <p> HorseJongkyu2 클래스 -> Super클래스(부모클래스)인 MainHorse클래스를 상속받았는데 인터페이스를 통해 booster()메소드를 사용하고 말의 속도를 계산해 리턴받는 calMove() 메소드를 오버라이딩하여 경마가 시작하면 바로 스테미너를 10깎고 부스터 메소드를 통해 속도에서 10 곱한 후 +2 늘려서 출발하는 말을 만들었습니다. </p>
 </div>
 <a href="https://github.com/kmc6381"><img src="https://img.shields.io/badge/강민철-0000FF?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <p> 이랴! </p>
+  <p> PineHouse 클래스 -> booster()와 calMove를 사용하여 만들었습니다. booster() 메서등서 스테미너를100으로 설정하고 *3을하여 속도를 3배 증가시켰습니다. calMove() 메서드에서는 만약 스테미너가 40 이하인 경우 스테미너를 초기화하고 속도를 증가하도록 만들었고  useStamina() 메서등서 스테미너가 20이하인 경우 속도를 /2를 하여 반으로 줄이도록 만들었습니다.</p>
 <div> 
   
   <a href="https://github.com/OneReal3203"><img src="https://img.shields.io/badge/양한진-00FF00?style=for-the-badge&logo=github&logoColor=white" /></a>
