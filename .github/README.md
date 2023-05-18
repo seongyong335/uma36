@@ -46,7 +46,7 @@
        
   <h2>🎥경마게임 구현 영상</h2>
    <div>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/ta2OHiD8VfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/ta2OHiD8VfA" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <h2>❓How to play </h2>
    <ol>
