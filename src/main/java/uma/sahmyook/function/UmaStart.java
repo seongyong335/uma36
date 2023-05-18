@@ -13,6 +13,7 @@ public class UmaStart {
     BettingScore bs = new BettingScore();
 
     public void umaStart() {
+
         if (0 >= MainMenu.ticket || MainMenu.ticket <= 11 && MainMenu.horseNum == 0){
             System.out.println("\n\n\n\n\n\n\n\n응원 말을 선택하시지 않으셨습니다!");
             System.out.print("응원하는 말을 선택해주세요~~");
@@ -22,6 +23,7 @@ public class UmaStart {
                 throw new RuntimeException(e);
             }
             return; }
+
             /* 경기 생성 및 시작 */
         UmaThread a = new UmaThread(0);
         UmaThread b = new UmaThread(1);

@@ -16,7 +16,6 @@ public class SubMenu{
         UmaStart umaStart = new UmaStart();
         Ticket ticket = new Ticket();
 
-
         do{
             System.out.println("================= 경기장에 입장하셨습니다! 원하시는 것을 선택해주세요. =================");
             System.out.println("현재 선택한 말 번호 : " + MainMenu.horseNum);
