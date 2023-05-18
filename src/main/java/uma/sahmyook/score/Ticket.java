@@ -22,7 +22,8 @@ public class Ticket {
                     "7".equals(num) || "8".equals(num) || "9".equals(num) || "10".equals(num)) {
                 no = Integer.parseInt(num);
                 if (MainMenu.ticket + no >= 10) {
-                    System.out.print("티켓을 10개 이상 초과해서 보유할 수 없습니다.");
+                    System.out.println("티켓은 최대 10개 보유 할 수 있습니다.");
+                    System.out.println("다시 구입해 주세요!");
                     try {
                         sleep(2000);
                     } catch (InterruptedException e) {
@@ -42,6 +43,14 @@ public class Ticket {
                     MainMenu.score -= (no * 1000);
                     MainMenu.ticket += no;
                     System.out.println("남은 스코어 :" + MainMenu.score + "  \\ " + "보유 티켓 수 : " + MainMenu.ticket);
+                    try {
+                        sleep(2000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }break;
+                } else if (MainMenu.score <= no * 1000 && MainMenu.ticket + no >= 0 && MainMenu.ticket + no <= 10) {
+                    System.out.println("보유 스코어 부족 및 티켓은 최대 10장 보유 할 수 있습니다.");
+                    System.out.println("다시 구입해 주세요!");
                     try {
                         sleep(2000);
                     } catch (InterruptedException e) {
