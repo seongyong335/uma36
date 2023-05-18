@@ -10,8 +10,8 @@
   </div>
   <div>
     <a href="https://github.com/asm2005"><img src="https://img.shields.io/badge/안성민-FF9900?style=for-the-badge&logo=github&logoColor=white" /></a>
-    <p> HorseSeongmin1 클래스 -> randomEvent() 메소드를 사용하여 일정 확률에 따라 스피드가 2배씩 증가하게 만들었습니다. 또한 스태미너에 따라 속도가 감소하는 조건문을 범위를 길게 설정하여 줄어들게 만들었습니다. </p>
-    <p> HorseSeongmin2 클래스 -> HorseSeongmin1 보다 기본 랜덤 스피드가 저점이 낮고, randomEvent() 메소드의 일정 확률을 더 낮춘 대신에, 스피드가 4배씩 증가하게 하여 고점을 좀 더 높게 뽑게 만들었습니다. </p>
+    <p> 꾸준히 안정적인 순위를 자랑하는 HorseJongkyu1 말!! 혹시 속도가 잘 뜬다면 1등...가능할지도...?!?!?! </p>
+    <p> 출발부스터를 사용해 치고 나가고 싶다면 HorseJongkyu2 말을 선택하세요! </p>
   </div>
  <div>
   <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a> 
