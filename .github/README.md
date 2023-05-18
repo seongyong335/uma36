@@ -12,10 +12,12 @@
     <a href="https://github.com/asm2005"><img src="https://img.shields.io/badge/안성민-FF9900?style=for-the-badge&logo=github&logoColor=white" /></a>
   </div>
  <div>
-  <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a>  
 </div>
 <a href="https://github.com/kmc6381"><img src="https://img.shields.io/badge/강민철-0000FF?style=for-the-badge&logo=github&logoColor=white" /></a>
-<div>
+  <p> 이랴! </p>
+<div> 
+  
   <a href="https://github.com/OneReal3203"><img src="https://img.shields.io/badge/양한진-00FF00?style=for-the-badge&logo=github&logoColor=white" /></a>
 </div>
 </div>
@@ -30,7 +32,7 @@
   <p>프로젝트는 자바로 개발되었으며, 사용자는 말의 승률과 배당률을 확인하고 자신의 응원할 말을 골라 가상의 경마를 즐길 수 있습니다.</p> <br>
   <p>객체지향적인 설계와 사용자 상호작용을 갖춘 프로젝트로, 재미와 전략을 경험할 수 있습니다.</p>
   <p>텍스트 기반으로 구현되었지만 직관적이고 즐거운 플레이 경험을 제공합니다.</p> <br>
-  <p>프로젝트는 경마 게임을 컴퓨터로 구현하여 플레이어가 선택지를 통해 가상의 경마를 즐길 수 있습니다.</p>
+  <p>프로젝트는 경마 게임을 컴퓨터로 구현하여 사용자가 선택지를 통해 가상의 경마를 즐길 수 있습니다.</p>
   <p>모듈화된 클래스 구조로 설계되어 유지보수와 확장이 용이하며, 코드의 가독성과 재사용성에도 신경쓰여 구현되었습니다.</p>
  
        
@@ -133,7 +135,7 @@
 <p>D. 경마 승리 확률 및 배당 확인</p>
 <ol>
 <pre class="notranslate"><code>
- <p>1번마 승리 확률: ____, 배당 확률: ____</p>
+<p>1번마 승리 확률: ____, 배당 확률: ____</p>
 <p>2번마 승리 확률: ____, 배당 확률: ____</p>
 <p>3번마 승리 확률: ____, 배당 확률: ____</p>
 <p>4번마 승리 확률: ____, 배당 확률: ____</p>
@@ -144,10 +146,10 @@
 <p>9번마 승리 확률: ____, 배당 확률: ____</p>
 </code></pre>
   </ol>
-<p>E. 마권 구매
+<p>E. 티켓 구매
   <ol>
   <pre class="notranslate"><code>
-   마권을 최대 10개까지 구매할 수 있습니다. (입력 필요)
+   티켓을 최대 10개까지 구매할 수 있습니다. (입력 필요)
 </code></pre>
 </ol>
   
