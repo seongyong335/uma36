@@ -14,7 +14,8 @@ public class UmaStart {
 
     public void umaStart() {
 
-        if (0 >= MainMenu.ticket || MainMenu.ticket <= 11 && MainMenu.horseNum == 0){
+        if (MainMenu.horseNum == 0){
+            /*응원말을 선택하지 않았을 경우*/
             System.out.println("\n\n\n\n\n\n\n\n응원 말을 선택하시지 않으셨습니다!");
             System.out.print("응원하는 말을 선택해주세요~~");
             try {

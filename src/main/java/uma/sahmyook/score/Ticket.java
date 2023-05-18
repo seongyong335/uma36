@@ -59,7 +59,7 @@ public class Ticket {
                     }
                     break;
                 }
-            } else {
+            } else { /*오입력할 경우 출력*/
                 System.out.print("잘못 입력하셨습니다. 다시 입력해 주세요. \n\n\n\n");
             }
         } while(true);
