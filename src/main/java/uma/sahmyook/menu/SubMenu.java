@@ -1,10 +1,6 @@
 package uma.sahmyook.menu;
-import com.sun.tools.javac.Main;
 import uma.sahmyook.function.UmaStart;
-import uma.sahmyook.horse.*;
 import uma.sahmyook.score.*;
-
-import uma.sahmyook.function.UmaRace;
 
 public class SubMenu{
 
