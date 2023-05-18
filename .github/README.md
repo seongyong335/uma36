@@ -45,7 +45,7 @@
  
        
   <h2>🎥경마게임 구현 영상</h2>
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/ta2OHiD8VfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   [![Video Label](https://www.youtube.com/watch?v=ta2OHiD8VfA)](https://youtu.be/ta2OHiD8VfA)
   <h2>❓How to play </h2>
    <ol>
   <li>Uma36을 시작하면 메인화면이 출력됩니다.</li>
