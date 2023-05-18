@@ -12,8 +12,7 @@
     <a href="https://github.com/asm2005"><img src="https://img.shields.io/badge/안성민-FF9900?style=for-the-badge&logo=github&logoColor=white" /></a>
   </div>
  <div>
-  <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a>
-   <div>안녕</div>
+  <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a>  
 </div>
 <a href="https://github.com/kmc6381"><img src="https://img.shields.io/badge/강민철-0000FF?style=for-the-badge&logo=github&logoColor=white" /></a>
 <div>
