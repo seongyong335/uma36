@@ -25,7 +25,10 @@
   
   <a href="https://github.com/OneReal3203"><img src="https://img.shields.io/badge/양한진-00FF00?style=for-the-badge&logo=github&logoColor=white" /></a>
 </div>
-</div>
+  <p> TokkiTee 클래스 -> 기본적인 mainHores 클래스의 특징을 유지하면서
+스태미너가 감소하면 스피드가 2배로 증가하는 단순하면서 강력한 성능을 보여주는 말을 만들었습니다. </p>
+    <p> RabbitPrincess4 ->클래스는 기본적으로 평균적으로 낮은 성능을 보여주지만 부스터 메소드의 발동을 통해 1등을 노릴 수 있는 잠재력이 있는 말을 만들었습니다. </p>
+</div>  
 <br>
   <div align="center">
     <a href="https://www.notion.so/UMA36-Milestone-4dfb98abd5c64d63b732d0c0720f4e09?pvs=4"><img src="https://img.shields.io/badge/마일스톤-FAD0C9?style=for-the-badge&logo=notion&logoColor=000000" /></a>
@@ -33,7 +36,7 @@
   <h2>🪪프로젝트 소개</h2>
   
   <h3> 🐎Uma 36이란? </h3>
-  <p> Uma36에서 'Uma'는 경마라는 의미를 갖고 있으며, 36은 '삼육대헉교'라는 의미를 갖고있습니다. 이 프로젝트는 텍스트 기반으로 만들어진 경마게임을 말합니다.</p>
+  <p> Uma36에서 'Uma'는 경마라는 의미를 갖고 있으며, 36은 '삼육대학교'라는 의미를 갖고있습니다. 이 프로젝트는 텍스트 기반으로 만들어진 경마게임을 말합니다.</p>
   <p>프로젝트는 자바로 개발되었으며, 사용자는 말의 승률과 배당률을 확인하고 자신의 응원할 말을 골라 가상의 경마를 즐길 수 있습니다.</p> <br>
   <p>객체지향적인 설계와 사용자 상호작용을 갖춘 프로젝트로, 재미와 전략을 경험할 수 있습니다.</p>
   <p>텍스트 기반으로 구현되었지만 직관적이고 즐거운 플레이 경험을 제공합니다.</p> <br>
