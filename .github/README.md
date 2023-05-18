@@ -15,7 +15,8 @@
   <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a>  
 </div>
 <a href="https://github.com/kmc6381"><img src="https://img.shields.io/badge/강민철-0000FF?style=for-the-badge&logo=github&logoColor=white" /></a>
-<div> <span>테스트 입니다. </span>
+  <span>테스트 입니다. </span>
+<div> 
   
   <a href="https://github.com/OneReal3203"><img src="https://img.shields.io/badge/양한진-00FF00?style=for-the-badge&logo=github&logoColor=white" /></a>
 </div>
