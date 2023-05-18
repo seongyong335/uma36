@@ -46,6 +46,7 @@
        
   <h2>🎥경마게임 구현 영상</h2>
   <p> 자막을 키고 봐주세요! </p>
+  <p> 사진을 클릭하면 유튜브로 넘어갑니다. </p>
   
    [![TEAM UMA - UMA36](http://img.youtube.com/vi/ta2OHiD8VfA/0.jpg)](https://youtu.be/ta2OHiD8VfA?t=0s) 
   
