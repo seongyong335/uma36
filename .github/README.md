@@ -10,12 +10,15 @@
   </div>
   <div>
     <a href="https://github.com/asm2005"><img src="https://img.shields.io/badge/안성민-FF9900?style=for-the-badge&logo=github&logoColor=white" /></a>
+    <p> HorseSeongmin1 클래스 -> randomEvent() 메소드를 사용하여 일정 확률에 따라 스피드가 2배씩 증가하게 만들었습니다. 또한 스태미너에 따라 속도가 감소하는 조건문을 범위를 길게 설정하여 줄어들게 만들었습니다. </p>
+      
+     <p> HorseSeongmin2 클래스 -> HorseSeongmin1 보다 기본 랜덤 스피드가 저점이 낮고, randomEvent() 메소드의 일정 확률을 더 낮춘 대신에, 스피드가 4배씩 증가하게 하여 고점을 좀 더 높게 뽑게 만들었습니다. </p> 
   </div>
  <div>
   <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a> 
    <p> HorseJongkyu1 클래스 -> Super클래스(부모클래스)인 MainHorse클래스를 상속 받았는데 부모클래스에서는 말이 이동할 때 마다 스테미너가 줄고 일정 스테미너값에 도달하면 말의 speed가 반으로 줄어들지만 인터페이스를 통해 스테미너가 일정수준에 도달하면 다시 초기값으로 세팅되어 속도가 줄지 않는 말을 만들었습니다. </p>
    
-   <p> HorseJongkyu2 클래스 -> Super클래스(부모클래스)인 MainHorse클래스를 상속받았는데 인터페이스를 통해 booster()메소드를 사용하고 말의 속도를 계산해 리턴받는 calMove() 메소드를 오버라이딩하여 경마가 시작하면 바로 스테피너를 20깎고 부스터 메소드를 통해 속도를 3배 늘려서 출발하는 말을 만들었습니다. </p>
+   <p> HorseJongkyu2 클래스 -> Super클래스(부모클래스)인 MainHorse클래스를 상속받았는데 인터페이스를 통해 booster()메소드를 사용하고 말의 속도를 계산해 리턴받는 calMove() 메소드를 오버라이딩하여 경마가 시작하면 바로 스테미너를 20깎고 부스터 메소드를 통해 속도를 3배 늘려서 출발하는 말을 만들었습니다. </p>
 </div>
 <a href="https://github.com/kmc6381"><img src="https://img.shields.io/badge/강민철-0000FF?style=for-the-badge&logo=github&logoColor=white" /></a>
   <p> 이랴! </p>
