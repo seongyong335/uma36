@@ -14,59 +14,60 @@ public class UmaStart {
 
     public void umaStart() {
 
-        if (MainMenu.horseNum == 0){
-            /*응원말을 선택하지 않았을 경우*/
-            System.out.println("\n\n\n\n\n\n\n\n응원 말을 선택하시지 않으셨습니다!");
-            System.out.print("응원하는 말을 선택해주세요~~");
-            try {
-                sleep(2000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            return; }
+        if (MainMenu.horseNum == 0) {
+//            /*응원말을 선택하지 않았을 경우*/
+//            System.out.println("\n\n\n\n\n\n\n\n응원 말을 선택하시지 않으셨습니다!");
+//            System.out.print("응원하는 말을 선택해주세요~~");
+//            try {
+//                sleep(2000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//            return; }
 
             /* 경기 생성 및 시작 */
-        UmaThread a = new UmaThread(0);
-        UmaThread b = new UmaThread(1);
-        UmaThread c = new UmaThread(2);
-        UmaThread d = new UmaThread(3);
-        UmaThread e = new UmaThread(4);
-        UmaThread f = new UmaThread(5);
-        UmaThread g = new UmaThread(6);
-        UmaThread h = new UmaThread(7);
-        UmaThread i = new UmaThread(8);
+            UmaThread a = new UmaThread(0);
+            UmaThread b = new UmaThread(1);
+            UmaThread c = new UmaThread(2);
+            UmaThread d = new UmaThread(3);
+            UmaThread e = new UmaThread(4);
+            UmaThread f = new UmaThread(5);
+            UmaThread g = new UmaThread(6);
+            UmaThread h = new UmaThread(7);
+            UmaThread i = new UmaThread(8);
 
-        //ClearThread clear = new ClearThread();
+            //ClearThread clear = new ClearThread();
 
-        a.start();
-        b.start();
-        c.start();
-        d.start();
-        e.start();
-        f.start();
-        g.start();
-        h.start();
-        i.start();
-        //clear.start();
-        try {
-            a.join();
-            b.join();
-            c.join();
-            d.join();
-            e.join();
-            f.join();
-            g.join();
-            h.join();
-            i.join();
-        } catch (InterruptedException P) {
-            throw new RuntimeException(P);
-        }
+            a.start();
+            b.start();
+            c.start();
+            d.start();
+            e.start();
+            f.start();
+            g.start();
+            h.start();
+            i.start();
+            //clear.start();
+            try {
+                a.join();
+                b.join();
+                c.join();
+                d.join();
+                e.join();
+                f.join();
+                g.join();
+                h.join();
+                i.join();
+            } catch (InterruptedException P) {
+                throw new RuntimeException(P);
+            }
 
-        us.checkRank();
-        bs.bettingResult();
-        Round.roundReset();
-        System.out.print("Enter를 눌러주세요...");
+            us.checkRank();
+            bs.bettingResult();
+            Round.roundReset();
+            System.out.print("Enter를 눌러주세요...");
 //        MainMenu.sc.nextLine();
-        System.out.println("\n");
+            System.out.println("\n");
+        }
     }
 }
