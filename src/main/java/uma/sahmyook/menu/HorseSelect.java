@@ -7,6 +7,9 @@ public class HorseSelect {
     public void method() {
         System.out.println("================= 응원마 선택 =================");
         do {
+            for(int i = 0; i < 9; i++){
+                System.out.println((i+1)+". "+us.getHorses().get(i).getUmaName() + "의 승률 : " + us.getHorses().get(i).getWinRate() + /* 승률 메소드 */ "%  | 배당률 : " +us.getHorses().get(i).getDividendRate() + "  | 경기수 : " + us.getHorses().get(i).getCountRace() + " | 탑3 : " + us.getHorses().get(i).getCountTop3() + "|");
+            }
             System.out.print("몇 번 말을 선택 하실껀가요?(1~9번) 돌아가기(0번) : ");
             MainMenu.horseStr = MainMenu.sc.nextLine();
             switch(MainMenu.horseStr){
