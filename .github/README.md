@@ -7,31 +7,42 @@
 <div align="left">
   <div>
     <a href="https://github.com/seongyong335"><img src="https://img.shields.io/badge/최성용-FAD0C9?style=for-the-badge&logo=github&logoColor=6E6E6D" /></a>
+    <pre>
+    재밌으면 됐지! 되겠냐? 어느쪽이야, 어엉!?
+    굉음을 내는 스크류가 거칠게 추진력을 발생시키고 상식에 얽매이지 않는 조타가 분방한 항적을 그려 나간다.
+    해도도 나침반도 필요 없어! 조류를 거슬러 파도를 억눌러!! 그저 본능대로 나는 나아간다!!!
+    골이라는 항구를 목표로 영광을 향한 무적의 'GoldShip' 출항이다!!!</pre>
+    <pre>
+    안녕하세요~ 'NiceNature'입니다~
+    선전은 해볼게~ 그 이상 할 수도 있구요. 네네~ 3등이어도 행복하거든요~ 서민인지라~
+    3등도 잘한거거든요~ 어차피 난 명품조연이니까 3등이 딱 적당히 어울려~
+    하지만 나도 1등하고 싶어! 더이상 3등이 어울린다는 말 뒤에 숨지 않아!! 고향에 있는 모두가 날 응원하니까!!!</pre>
   </div>
   <div>
     <a href="https://github.com/asm2005"><img src="https://img.shields.io/badge/안성민-FF9900?style=for-the-badge&logo=github&logoColor=white" /></a>
-    <p> HorseSeongmin1 클래스 -> randomEvent() 메소드를 사용하여 일정 확률에 따라 스피드가 2배씩 증가하게 만들었습니다. 또한 스태미너에 따라 속도가 감소하는 조건문을 범위를 길게 설정하여 줄어들게 만들었습니다. </p>
-    <p> HorseSeongmin2 클래스 -> HorseSeongmin1 보다 기본 랜덤 스피드가 저점이 낮고, randomEvent() 메소드의 일정 확률을 더 낮춘 대신에, 스피드가 4배씩 증가하게 하여 고점을 좀 더 높게 뽑게 만들었습니다. </p>
+    <p> S1 말 : 초반 설계 때 승률이 나쁘지 않아 너프를 당하지 않은 운 좋은 말!! 안전빵을 원한다면 나쁘지 않을지도??  </p>
+    <p> S2 말 : 초반 설계 때 승률이 압도적이라 저격 잠수함 너프를 당하고 묻혀버린 비운의 말... 버프좀 해주세요!!! </p>
   </div>
  <div>
   <a href="https://github.com/jongkyuh"><img src="https://img.shields.io/badge/함종규-FF0000?style=for-the-badge&logo=github&logoColor=white" /></a> 
-   <p> HorseJongkyu1 클래스 -> Super클래스(부모클래스)인 MainHorse클래스를 상속 받았는데 부모클래스에서는 말이 이동할 때 마다 스테미너가 줄고 일정 스테미너값에 도달하면 말의 speed가 반으로 줄어들지만 인터페이스를 통해 스테미너가 일정수준에 도달하면 다시 초기값으로 세팅되어 속도가 줄지 않는 말을 만들었습니다. </p>
+   <p>      꾸준히 안정적인 순위를 자랑하는 HorseJongkyu1 말!! 혹시 속도가 잘 뜬다면 1등...가능할지도...?!?!?!      </p>
    
-   <p> HorseJongkyu2 클래스 -> Super클래스(부모클래스)인 MainHorse클래스를 상속받았는데 인터페이스를 통해 booster()메소드를 사용하고 말의 속도를 계산해 리턴받는 calMove() 메소드를 오버라이딩하여 경마가 시작하면 바로 스테미너를 10깎고 부스터 메소드를 통해 속도에서 10 곱한 후 +2 늘려서 출발하는 말을 만들었습니다. </p>
+   <p>  출발부스터를 사용해 치고 나가고 싶다면 HorseJongkyu2 말을 선택하세요! </p>
 </div>
 <a href="https://github.com/kmc6381"><img src="https://img.shields.io/badge/강민철-0000FF?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <p> PineHouse 클래스 -> booster()와 calMove를 사용하여 만들었습니다. booster() 메서등서 스테미너를100으로 설정하고 *3을하여 속도를 3배 증가시켰습니다. calMove() 메서드에서는 만약 스테미너가 40 이하인 경우 스테미너를 초기화하고 속도를 증가하도록 만들었고  useStamina() 메서등서 스테미너가 20이하인 경우 속도를 /2를 하여 반으로 줄이도록 만들었습니다.</p>
+  <p>저의 애마인 PineHouse의 능력치를 소개하겠습니다. PH는 부스터라는 스킬을 가지고있습니다. 스테미너에 따라 부스터 효과로 속도가 증가하는 능력을 가지고있습니다.</p>
 <div> 
   
   <a href="https://github.com/OneReal3203"><img src="https://img.shields.io/badge/양한진-00FF00?style=for-the-badge&logo=github&logoColor=white" /></a>
 </div>
-  <p> TokkiTee 클래스 -> 기본적인 mainHores 클래스의 특징을 유지하면서
-스태미너가 감소하면 스피드가 2배로 증가하는 단순하면서 강력한 성능을 보여주는 말을 만들었습니다. </p>
-    <p> RabbitPrincess4 ->클래스는 기본적으로 평균적으로 낮은 성능을 보여주지만 부스터 메소드의 발동을 통해 1등을 노릴 수 있는 잠재력이 있는 말을 만들었습니다. </p>
+  <p> 토끼티는 단순하게 스태미너가 감소할때마다 스피드가 증가하는 단순한 스킬을 보유하고 있는 기본에 충실한 말입니다.
+안정적인 우마게임을 원한다면 반드시 추천하는 말입니다.. </p>
+    <p>토끼공주4세는 높은 배당률을 보유 하고 있는 말입니다. 토끼공주4세는 승리할 가능성이 적지만 토끼공주4세의 질주는 1등의 가능성을 보유하고 있는 가능성 높은 스킬이기 때문에 믿고 선택한다면 어마어마한 스코어를 획득할 수 있을 것입니다. 
+ </p>
 </div>  
 <br>
   <div align="center">
-    <a href="https://www.notion.so/UMA36-Milestone-4dfb98abd5c64d63b732d0c0720f4e09?pvs=4"><img src="https://img.shields.io/badge/마일스톤-FAD0C9?style=for-the-badge&logo=notion&logoColor=000000" /></a>
+    <a href="https://sky-objective-d96.notion.site/UMA36-Milestone-07fff5c249c54ed1a0ed211fa3b2aea0"><img src="https://img.shields.io/badge/마일스톤-FAD0C9?style=for-the-badge&logo=notion&logoColor=000000" /></a>
   </div>  
   <h2>🪪프로젝트 소개</h2>
   
